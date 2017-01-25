@@ -1,0 +1,40 @@
+// -------------------------------
+// _HOME.SCSS
+// Home View Styling
+// -------------------------------
+#root{
+	
+}
+
+.app {
+  font-family: 'Raleway', sans-serif;
+  background-color: $lightgray;
+  height: 100vh;
+}
+
+.app-header {
+  background-color: $darkgray;
+  height: 60px;
+  padding: 20px;
+  color: $rose;
+  font-family: 'Playfair Display', serif;
+  line-height: 20px;
+}
+
+.nav-name {
+	font-size: 20px;
+}
+
+.navbar {
+	float: right;
+	li{
+		list-style: none;
+		display: inline;
+		margin-right: 20px;
+	}
+}
+
+// @keyframes App-logo-spin {
+//   from { transform: rotate(0deg); }
+//   to { transform: rotate(360deg); }
+// }

@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display|Raleway");
+/* line 9, ../compass/sass/views/_home.scss */
+.app {
+  font-family: 'Raleway', sans-serif;
+  background-color: #F4F4F4;
+  height: 100vh;
+}
+
+/* line 15, ../compass/sass/views/_home.scss */
+.app-header {
+  background-color: #373737;
+  height: 60px;
+  padding: 20px;
+  color: #DECEC3;
+  font-family: 'Playfair Display', serif;
+  line-height: 20px;
+}
+
+/* line 24, ../compass/sass/views/_home.scss */
+.nav-name {
+  font-size: 20px;
+}
+
+/* line 28, ../compass/sass/views/_home.scss */
+.navbar {
+  float: right;
+}
+/* line 30, ../compass/sass/views/_home.scss */
+.navbar li {
+  list-style: none;
+  display: inline;
+  margin-right: 20px;
+}

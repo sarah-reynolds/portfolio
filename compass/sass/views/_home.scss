@@ -2,37 +2,190 @@
 // _HOME.SCSS
 // Home View Styling
 // -------------------------------
-#root{
-	
-}
 
 .app {
-  font-family: 'Raleway', sans-serif;
+  font-family: $sans-serif;
+  font-weight: 300;
   background-color: $lightgray;
   height: 100vh;
+  color: $green;
+  font-size: 15px;
 }
 
 .app-header {
-  background-color: $darkgray;
+  background-color: $nickel;
   height: 60px;
   padding: 20px;
-  color: $rose;
-  font-family: 'Playfair Display', serif;
+  color: $green;
+  font-family: $serif;
   line-height: 20px;
-}
+  	.nav-name {
+		font-size: 30px;
+	}
 
-.nav-name {
-	font-size: 20px;
-}
-
-.navbar {
-	float: right;
-	li{
-		list-style: none;
-		display: inline;
-		margin-right: 20px;
+	.navbar {
+		float: right;
+		ul{
+			float: right;
+		}
+		li{
+			list-style: none;
+			display: inline;
+			margin-right: 20px;
+			color: $green;
+		}
 	}
 }
+
+
+
+a{
+color: $green;
+text-decoration: none;
+	&:visited{
+		color: $green;
+		text-decoration: none;
+	}
+	&:hover, &:active{
+		color: $dimgreen;
+		text-decoration: none;
+		
+	}
+}
+
+.custom-button {
+	padding: 10px 20px;
+	margin: 5px;
+	background-color: $darkgray;
+	color: $rose;
+	border-width: 0px;
+	display: inline-block;
+		&:hover, &:active, &:visited{
+			color: $rose;
+			text-decoration: none;
+		}
+}
+.inlineblock {
+	display: inline-block;
+}
+
+.home {
+	background-image: url('http://i.imgur.com/qzLovJb.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+
+		.home-bg {
+			background-color: rgba(255, 255, 255, 0.6);
+			padding: 30px 0;
+			margin-top: 125px;
+		}
+		.hello {
+			font-size: 30px;
+			font-family: $serif;
+		}
+		.intro {
+			font-size: 20px;
+		}
+}
+
+.about {
+	background-image: url('http://i.imgur.com/p1otj7L.jpg');
+	background-repeat: repeat;
+	height: 100vh;
+	padding: 50px;
+		a{
+			color: #9E9995;
+		}
+		.profile-pic {
+			max-width: 100%;
+			border: 3px solid $rose;
+		}
+		.about-header {
+			font-size: 30px;
+			font-family: $serif;
+			padding-top: 20px;
+		}
+}
+
+.portfolio {
+	background-image: url('http://i.imgur.com/p1otj7L.jpg');
+	background-repeat: repeat;
+	height: 100vh;
+	padding: 50px;
+		.port-header {
+			font-family: $serif;
+			font-weight: 700;
+		}
+		.port-section {
+			margin-bottom: 10px;
+		}
+		.port-wrapper {
+  		 	padding: 5px;
+  		 	margin-bottom: 20px;
+    		background-color: #fff;
+    		border: 3px solid $lightgray;
+    		-webkit-transition: border .2s ease-in-out;
+    		transition: border .2s ease-in-out;
+    			img {
+    				width: 100%;
+    				border: 1px solid $lightgray;
+    				margin-top: 30px;
+    				max-width: 300px;
+    			}
+		}
+}
+
+.experience {
+	background-image: url('http://i.imgur.com/p1otj7L.jpg');
+	background-repeat: repeat;
+	height: 100vh;
+	padding: 50px;
+	.Collapsible__trigger {
+		font-weight: 700;
+		font-family: $serif;
+		font-size: 20px;
+		cursor: pointer;
+			&:hover {
+				color: $dimgreen;
+			}
+	}
+	.skills-header{
+		font-weight: 700;
+		font-family: $serif;
+	}
+	.skills-bg {
+		background-color: rgba(255, 255, 255, 0.4);
+		padding: 20px;
+	}
+	.exp-header {
+		font-weight: 700;
+	}
+	img {
+		margin-bottom: 20px;
+	}
+}
+
+
+.connect {
+	background-image: url('http://i.imgur.com/p1otj7L.jpg');
+	background-repeat: repeat;
+	height: 100vh;
+	padding: 50px;
+		.form-label {
+			width: 15%;
+
+		}
+		.input{
+			width: 85%;
+			border: 1px solid $lightgray;
+		}
+		textarea {
+			height: 100px;
+		}
+}
+
+
 
 // @keyframes App-logo-spin {
 //   from { transform: rotate(0deg); }

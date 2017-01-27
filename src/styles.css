@@ -1,33 +1,212 @@
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display|Raleway");
-/* line 9, ../compass/sass/views/_home.scss */
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Roboto:300,400,700");
+/* line 6, ../compass/sass/views/_home.scss */
 .app {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
   background-color: #F4F4F4;
   height: 100vh;
+  color: #4B5144;
+  font-size: 15px;
 }
 
 /* line 15, ../compass/sass/views/_home.scss */
 .app-header {
-  background-color: #373737;
+  background-color: #C6C0BC;
   height: 60px;
   padding: 20px;
-  color: #DECEC3;
-  font-family: 'Playfair Display', serif;
+  color: #4B5144;
+  font-family: "Playfair Display", serif;
   line-height: 20px;
 }
-
-/* line 24, ../compass/sass/views/_home.scss */
-.nav-name {
-  font-size: 20px;
+/* line 22, ../compass/sass/views/_home.scss */
+.app-header .nav-name {
+  font-size: 30px;
 }
-
-/* line 28, ../compass/sass/views/_home.scss */
-.navbar {
+/* line 26, ../compass/sass/views/_home.scss */
+.app-header .navbar {
   float: right;
 }
-/* line 30, ../compass/sass/views/_home.scss */
-.navbar li {
+/* line 28, ../compass/sass/views/_home.scss */
+.app-header .navbar ul {
+  float: right;
+}
+/* line 31, ../compass/sass/views/_home.scss */
+.app-header .navbar li {
   list-style: none;
   display: inline;
   margin-right: 20px;
+  color: #4B5144;
+}
+
+/* line 42, ../compass/sass/views/_home.scss */
+a {
+  color: #4B5144;
+  text-decoration: none;
+}
+/* line 45, ../compass/sass/views/_home.scss */
+a:visited {
+  color: #4B5144;
+  text-decoration: none;
+}
+/* line 49, ../compass/sass/views/_home.scss */
+a:hover, a:active {
+  color: #787D73;
+  text-decoration: none;
+}
+
+/* line 56, ../compass/sass/views/_home.scss */
+.custom-button {
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #373737;
+  color: #DECEC3;
+  border-width: 0px;
+  display: inline-block;
+}
+/* line 63, ../compass/sass/views/_home.scss */
+.custom-button:hover, .custom-button:active, .custom-button:visited {
+  color: #DECEC3;
+  text-decoration: none;
+}
+
+/* line 68, ../compass/sass/views/_home.scss */
+.inlineblock {
+  display: inline-block;
+}
+
+/* line 72, ../compass/sass/views/_home.scss */
+.home {
+  background-image: url("http://i.imgur.com/qzLovJb.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+/* line 78, ../compass/sass/views/_home.scss */
+.home .home-bg {
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 30px 0;
+  margin-top: 125px;
+}
+/* line 83, ../compass/sass/views/_home.scss */
+.home .hello {
+  font-size: 30px;
+  font-family: "Playfair Display", serif;
+}
+/* line 87, ../compass/sass/views/_home.scss */
+.home .intro {
+  font-size: 20px;
+}
+
+/* line 92, ../compass/sass/views/_home.scss */
+.about {
+  background-image: url("http://i.imgur.com/p1otj7L.jpg");
+  background-repeat: repeat;
+  height: 100vh;
+  padding: 50px;
+}
+/* line 97, ../compass/sass/views/_home.scss */
+.about a {
+  color: #9E9995;
+}
+/* line 100, ../compass/sass/views/_home.scss */
+.about .profile-pic {
+  max-width: 100%;
+  border: 3px solid #DECEC3;
+}
+/* line 104, ../compass/sass/views/_home.scss */
+.about .about-header {
+  font-size: 30px;
+  font-family: "Playfair Display", serif;
+  padding-top: 20px;
+}
+
+/* line 111, ../compass/sass/views/_home.scss */
+.portfolio {
+  background-image: url("http://i.imgur.com/p1otj7L.jpg");
+  background-repeat: repeat;
+  height: 100vh;
+  padding: 50px;
+}
+/* line 116, ../compass/sass/views/_home.scss */
+.portfolio .port-header {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+}
+/* line 120, ../compass/sass/views/_home.scss */
+.portfolio .port-section {
+  margin-bottom: 10px;
+}
+/* line 123, ../compass/sass/views/_home.scss */
+.portfolio .port-wrapper {
+  padding: 5px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 3px solid #F4F4F4;
+  -webkit-transition: border .2s ease-in-out;
+  transition: border .2s ease-in-out;
+}
+/* line 130, ../compass/sass/views/_home.scss */
+.portfolio .port-wrapper img {
+  width: 100%;
+  border: 1px solid #F4F4F4;
+  margin-top: 30px;
+  max-width: 300px;
+}
+
+/* line 139, ../compass/sass/views/_home.scss */
+.experience {
+  background-image: url("http://i.imgur.com/p1otj7L.jpg");
+  background-repeat: repeat;
+  height: 100vh;
+  padding: 50px;
+}
+/* line 144, ../compass/sass/views/_home.scss */
+.experience .Collapsible__trigger {
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  cursor: pointer;
+}
+/* line 149, ../compass/sass/views/_home.scss */
+.experience .Collapsible__trigger:hover {
+  color: #787D73;
+}
+/* line 153, ../compass/sass/views/_home.scss */
+.experience .skills-header {
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+}
+/* line 157, ../compass/sass/views/_home.scss */
+.experience .skills-bg {
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 20px;
+}
+/* line 161, ../compass/sass/views/_home.scss */
+.experience .exp-header {
+  font-weight: 700;
+}
+/* line 164, ../compass/sass/views/_home.scss */
+.experience img {
+  margin-bottom: 20px;
+}
+
+/* line 170, ../compass/sass/views/_home.scss */
+.connect {
+  background-image: url("http://i.imgur.com/p1otj7L.jpg");
+  background-repeat: repeat;
+  height: 100vh;
+  padding: 50px;
+}
+/* line 175, ../compass/sass/views/_home.scss */
+.connect .form-label {
+  width: 15%;
+}
+/* line 179, ../compass/sass/views/_home.scss */
+.connect .input {
+  width: 85%;
+  border: 1px solid #F4F4F4;
+}
+/* line 183, ../compass/sass/views/_home.scss */
+.connect textarea {
+  height: 100px;
 }

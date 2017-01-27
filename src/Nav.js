@@ -6,16 +6,16 @@ class Nav extends Component {
 		return (
 			<div className="container-fluid app-header">
 				<div className="row">
-					<div className="col-xs-3 nav-name">
+					<div className="col-xs-12 col-sm-5 nav-name">
 						SARAH BASINGER
 					</div>
-					<div className="col-xs-9">
-						<ul className="navbar">
-							<li><Link to='/'>HOME</Link></li>
-							<li><Link to='/about'>ABOUT</Link></li>
-							<li><Link to='/experience'>EXPERIENCE</Link></li>
-							<li><Link to='/portfolio'>PORTFOLIO</Link></li>
-							<li><Link to='/connect'>CONNECT</Link></li>
+					<div className="col-sm-6 navbar">
+						<ul>
+							<li><Link to='/'>Home</Link></li>
+							<li><Link to='/about'>About</Link></li>
+							<li><Link to='/experience'>Experience</Link></li>
+							<li><Link to='/portfolio'>Portfolio</Link></li>
+							<li><Link to='/connect'>Connect</Link></li>
 						</ul>
 					</div>
 				</div>

@@ -190,24 +190,30 @@ a:hover, a:active {
 .experience img {
   margin-bottom: 20px;
 }
+/* line 167, ../compass/sass/views/_home.scss */
+.experience .lang-sym {
+  margin: 5px;
+  font-size: 11px;
+  text-align: center;
+}
 
-/* line 170, ../compass/sass/views/_home.scss */
+/* line 175, ../compass/sass/views/_home.scss */
 .connect {
   background-image: url("http://i.imgur.com/p1otj7L.jpg");
   background-repeat: repeat;
   height: 100vh;
   padding: 50px;
 }
-/* line 175, ../compass/sass/views/_home.scss */
+/* line 180, ../compass/sass/views/_home.scss */
 .connect .form-label {
   width: 15%;
 }
-/* line 179, ../compass/sass/views/_home.scss */
+/* line 184, ../compass/sass/views/_home.scss */
 .connect .input {
   width: 85%;
   border: 1px solid #F4F4F4;
 }
-/* line 183, ../compass/sass/views/_home.scss */
+/* line 188, ../compass/sass/views/_home.scss */
 .connect textarea {
   height: 100px;
 }

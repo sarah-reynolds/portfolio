@@ -161,13 +161,17 @@ text-decoration: none;
 	.exp-header {
 		font-weight: 700;
 	}
-	img {
-		margin-bottom: 20px;
-	}
+
 	.lang-sym {
-		margin: 5px;
+		min-width: 45px;
 		font-size: 11px;
 		text-align: center;
+		margin-bottom: 10px;
+	}
+	.lang-header {
+		border-top: 2px solid white;
+		margin-top: 10px;
+		padding-top: 5px;
 	}
 }
 

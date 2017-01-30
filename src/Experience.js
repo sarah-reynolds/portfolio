@@ -12,14 +12,14 @@ class Experience extends Component {
       						<br /><p className="exp-header">Full-Stack Web Development Student at DigitalCrafts (Nov 2016 - Mar 2017)</p>
       						<p>DigitalCrafts' 16 Week Immersive Bootcamp covers full-stack web development by teaching basic and advanced front-end web development (including React), JavaScript and the MEAN stack, as well as Python and MySQL.</p><br />
       					<h3 className="skills-header">Other Professional Experience</h3>
-      						<br /><p className="exp-header">Email Marketing Manager (2009 - 2016)</p>
-      						<p>All aspects of email marketing including: gather assets and requisites; advise on best practices; code responsive emails; perform extensive QA, including correcting rendering issues across multiple ESPs; perform data and list work; work with back end teams to manage and improve data flow; code dynamic content for personalization and targeting; verify opt-out process complies with CAN-SPAM; schedule deployments; manage transactional / service emails; manage special projects (launch new clients, implement new features, minify and clean up code, develop new automations and drip campaigns, integrate segmentation.</p>
+      						<br /><p className="exp-header">Email Marketing Management</p>
+      						<p>All aspects of email marketing including: gather assets and requisites from multiple stakeholders; advise on best practices; code responsive emails; perform extensive QA, including correcting rendering issues across multiple ESPs; perform data and list work; work with back end teams to manage and improve data flow; code dynamic content for personalization and targeting; verify opt-out process complies with CAN-SPAM; schedule deployments; manage transactional / service emails; manage special projects (launch new clients, implement new features, minify and clean up code, develop new automations and drip campaigns, integrate segmentation.</p>
       						<ul>
       							<li>Contract Email Marketing Manager and Developer (Aug 2015 - Present)</li>
       							<li>Email Manager and Team Lead at Yes Lifecycle Marketing (Oct 2015 - May 2016)</li>
       							<li>Email Marketing Manager at Cartera Commerce (Oct 2008 - Jul 2015)</li>
       						</ul>
-      						<br /><p className="exp-header">Marketing, Administrative, and Production Support (2004 - 2009)</p>
+      						<br /><p className="exp-header">Marketing, Administrative, and Production Support</p>
       						<p>Provided administrative, production, creative, graphic, photographic, sales and marketing support for marketing executives and teams.</p>
       						<ul>
       							<li>Marketing Assistant at Morris Visitor Publications (Dec 2006 - Oct 2008)</li>

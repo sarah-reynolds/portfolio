@@ -15,12 +15,12 @@ class About extends Component {
 								About Sarah
 							</div>
 							<div>
-								<p>[ Email marketing professional turned full-stack web developer. ]</p>
-								<p>I'm currently enrolled in a 4-month full-stack web development training program at <a href="http://www.digitalcrafts.com" target="_blank"><strong>DigitalCrafts</strong></a> in Atlanta, GA. Class wraps up on March 24, 2017.</p>
+								<br /><p>[ Email marketing professional turned full-stack web developer. ]</p>
+								<p>I am currently enrolled in a 4-month full-stack web development training program at <a href="http://www.digitalcrafts.com" target="_blank"><strong>DigitalCrafts</strong></a> in Atlanta, GA. Class wraps up on March 24, 2017.</p>
 								<p>When I'm not coding, you can find me reading fantasy novels, going on hikes with my husband and dogs, traveling, playing video games, baking, taking pictures, and obsessing over anything Harry Potter or Lord of the Rings.</p>
 							</div>
 							<div className="col-xs-12 text-center">
-								<Button linkTo={"/experience"} buttonText={"Experience and Skills"} />
+								<br /><Button linkTo={"/experience"} buttonText={"Experience and Skills"} />
 							</div>
 						</div>
 					</div>

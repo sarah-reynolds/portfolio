@@ -30,28 +30,27 @@
 		}
 		li{
 			list-style: none;
-			display: inline;
+			display: inline-block;
 			margin-right: 20px;
 			color: $green;
-			// a:before {
-			// 	content: "";
-			// 	position: absolute;
-			// 	width: 100%;
-			// 	height: 1px;
-			// 	bottom: 0;
-			// 	left: 0;
-			// 	background-color: $green;
-			// 	visibility: hidden;
-			// 	-webkit-transform: scaleX(0);
-			// 	transform: scaleX(0);
-			// 	-webkit-transition: all 0.3s ease-in-out 0s;
-			// 	transition: all 0.3s ease-in-out 0s;
-			// }
-			// a:hover:before {
-			// 	visibility: visible;
-			// 	-webkit-transform: scaleX(1);
-			// 	transform: scaleX(1);
-			// }
+			text-decoration: none;
+	    		&:after{
+	   				content: '';
+					display: block;
+					height: 1px;
+					width: 0;
+					background: transparent;
+					transition: width .5s ease, background-color .5s ease;
+					text-decoration: none;
+				}
+				&:hover:after{
+					width: 100%;
+					background: $green;
+					text-decoration: none;
+				}
+				&:active{
+					text-decoration: none;
+				}
 		}
 	}
 }
@@ -64,10 +63,9 @@ text-decoration: none;
 		text-decoration: none;
 	}
 	&:hover, &:active{
-		color: $dimgreen;
+		color: $green;
 		text-decoration: none;
 	}
-	
 }
 
 .custom-button {
@@ -78,9 +76,12 @@ text-decoration: none;
 	color: $green;
 	border: 2px solid $green;
 	display: inline-block;
+	-webkit-transition-duration: 0.5s; /* Safari */
+    transition-duration: 0.5s;
 		&:hover, &:active, &:visited{
 			color: $green;
 			text-decoration: none;
+			background-color: $lightgray;
 		}
 }
 .inlineblock {

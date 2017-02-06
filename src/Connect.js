@@ -7,8 +7,8 @@ class Connect extends Component {
 			<div className="container-fluid connect">
 				<div className="row">
 					<div className="col-xs-12 col-sm-10 col-sm-offset-1">
-						<div><img src="http://i.imgur.com/yWOrVTR.png" width="25px" /><strong>Github:</strong> <a href="https://github.com/sarahbasinger" target="_blank">github.com/sarahbasinger</a></div> <br />
-						<div>&nbsp;<img src="http://i.imgur.com/iEohfPG.png" width="15px" />&nbsp;<strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sarahreynoldsbasinger" target="_blank">linkedin.com/in/sarahreynoldsbasinger</a></div>
+						<div><img src="http://i.imgur.com/yWOrVTR.png" width="25px" role="presentation" /><strong>Github:</strong> <a href="https://github.com/sarahbasinger" target="_blank">github.com/sarahbasinger</a></div> <br />
+						<div>&nbsp;<img src="http://i.imgur.com/iEohfPG.png" width="15px" role="presentation" />&nbsp;<strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sarahreynoldsbasinger" target="_blank">linkedin.com/in/sarahreynoldsbasinger</a></div>
 
 						{/* <form>
 							<label className="form-label">Name:</label><input className="input" type="text" name="name" /><br />

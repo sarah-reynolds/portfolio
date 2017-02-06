@@ -8,7 +8,7 @@ class About extends Component {
 				<div className="row">
 					<div className="col-sm-10 col-sm-offset-1">
 						<div className="col-sm-4 col-xs-12">
-							<img className="img-circle profile-pic" src="http://i.imgur.com/sIGNFyM.jpg" />
+							<img className="img-circle profile-pic" src="http://i.imgur.com/sIGNFyM.jpg" role="presentation"/>
 						</div>
 						<div className="col-sm-7 col-sm-offset-1 col-xs-12">
 							<div className="about-header">

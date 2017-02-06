@@ -16,7 +16,7 @@ class Portfolio extends Component {
 									<BtnExternal linkTo={"http://www.canigo.co"} buttonText={"Live Demo"} />
 							</div>
 							<div className="col-md-6 col-sm-12">
-								<img src="http://i.imgur.com/3ENpyDz.png" />
+								<img src="http://i.imgur.com/3ENpyDz.png" role="presentation" />
 							</div>
 
 
@@ -32,7 +32,7 @@ class Portfolio extends Component {
 									<BtnExternal linkTo={""} buttonText={"Live Demo"} />
 							</div>
 							<div className="col-md-6 col-sm-12">
-								<img src="http://i.imgur.com/IirSSso.png" />
+								<img src="http://i.imgur.com/IirSSso.png" role="presentation" />
 							</div>
 
 

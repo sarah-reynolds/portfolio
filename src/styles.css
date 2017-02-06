@@ -269,3 +269,7 @@ a:hover, a:active {
 .connect textarea {
   height: 100px;
 }
+/* line 227, ../compass/sass/views/_home.scss */
+.connect .connect-spacing {
+  line-height: 30px;
+}

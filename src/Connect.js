@@ -8,14 +8,12 @@ class Connect extends Component {
 				<div className="row">
 					<div className="col-xs-12 col-sm-10 col-sm-offset-1">
 						<div className="connect-spacing">
-							<img src="http://i.imgur.com/yWOrVTR.png" width="35px" role="presentation" />
-							<br /><strong>Github</strong>
-							<br /><a href="https://github.com/sarahbasinger" target="_blank">github.com/sarahbasinger</a>
+							<a href="https://github.com/sarahbasinger" target="_blank"><img src="http://i.imgur.com/Zx9xtoW.png" width="50px" role="presentation" />
+							<br />github.com/sarahbasinger</a>
 						</div> <br />
 						<div className="connect-spacing">
-							<img src="http://i.imgur.com/iEohfPG.png" width="25px" role="presentation" />
-							<br /><strong>LinkedIn</strong> 
-							<br /><a href="https://www.linkedin.com/in/sarahreynoldsbasinger" target="_blank">linkedin.com/in/sarahreynoldsbasinger</a>
+							<a href="https://www.linkedin.com/in/sarahreynoldsbasinger" target="_blank"><img src="http://i.imgur.com/EdTD31u.png" width="50px" role="presentation" />
+							<br />linkedin.com/in/sarahreynoldsbasinger</a>
 						</div>
 
 						{/* <form>

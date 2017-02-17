@@ -11,7 +11,7 @@ class Home extends Component {
 							Hello!
 						</div>
 						<div className="col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1 text-center intro">
-							<br />My name is Sarah and I am a full-stack web developer seeking new opportunities in the Greater Denver area.
+							<br />My name is Sarah and I am a full-stack web developer based in Atlanta, GA.
 						</div>
 						<div className="col-xs-12 text-center">
 							<br /><Button className="btnOnHome" linkTo={"/about"} buttonText={"About"} />

@@ -7,7 +7,7 @@ class Nav extends Component {
 			<div className="container-fluid app-header">
 				<div className="row">
 					<div className="col-xs-12 col-sm-5 nav-name">
-						SARAH BASINGER
+						SARAH BASINGER<span className="seafoam-green glyphicon glyphicon-menu-right"></span>
 					</div>
 					<div className="col-sm-6 navbar">
 						<ul>

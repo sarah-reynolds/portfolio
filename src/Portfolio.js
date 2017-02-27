@@ -42,12 +42,13 @@ class Portfolio extends Component {
 					</div>				
 				</div>
 				<div className="row">
-					{/* ======== BUTTON ======== */}
+					{/* ======== BUTTON ======== 
 					<div className="col-xs-12 text-right">
 						<div className="text-right">
 							<br /><Button linkTo={"/connect"} buttonText={"Connect"} />
 						</div>
 					</div>
+					*/}
 				</div>
 			</div>
 		)

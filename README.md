@@ -4,4 +4,5 @@
 ### Dependencies
 ```
 npm install react-collapsible
+npm install bootstrap@3
 ```

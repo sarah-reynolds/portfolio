@@ -14,6 +14,10 @@ class Connect extends Component {
 						<div className="connect-spacing">
 							<a href="https://www.linkedin.com/in/sarahreynoldsbasinger" target="_blank"><img src="http://i.imgur.com/EdTD31u.png" width="50px" role="presentation" />
 							<br />linkedin.com/in/sarahreynoldsbasinger</a>
+						</div><br />
+						<div className="connect-spacing">
+							<a href="mailto:sarrey@gmail.com" target="_blank"><img src="http://i.imgur.com/eUyMMev.png" width="50px" role="presentation" />
+							<br />sarrey@gmail.com</a>
 						</div>
 
 						{/* <form>

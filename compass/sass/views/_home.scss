@@ -4,26 +4,33 @@
 // -------------------------------
 
 .app {
-  font-family: $sans-serif;
-  font-weight: 300;
-  background-color: $lightgray;
-  height: 100vh;
-  color: $green;
-  font-size: 16px;
+	font-family: $sans-serif;
+	font-weight: 300;
+	background-color: $white;
+	height: 100vh;
+	color: $darkgray;
+	font-size: 16px;
 }
 
 .app-header {
-  background-color: $nickel;
-  height: 60px;
-  padding: 20px;
-  color: $green;
-  font-family: $serif;
-  line-height: 20px;
-  	.nav-name {
+	background-color: $white;
+	height: 60px;
+	padding: 20px;
+	color: $darkgray;
+	font-family: $serif;
+	line-height: 15px;
+	border-bottom: $seafoam solid 1px;
+		.nav-name {
 		font-size: 30px;
+			.seafoam-green{
+				color: $seafoam;
+				font-size: 24px;
+			}
+		
 	}
 
 	.navbar {
+		
 		float: right;
 		ul{
 			float: right;
@@ -32,10 +39,10 @@
 			list-style: none;
 			display: inline-block;
 			margin-right: 20px;
-			color: $green;
+			color: $darkgray;
 			text-decoration: none;
-	    		&:after{
-	   				content: '';
+					&:after{
+		 				content: '';
 					display: block;
 					height: 1px;
 					width: 0;
@@ -45,10 +52,16 @@
 				}
 				&:hover:after{
 					width: 100%;
-					background: $green;
+					background: $seafoam;
+					color: $seafoam;
 					text-decoration: none;
 				}
 				&:active{
+					text-decoration: none;
+					color: $seafoam;
+				}
+				&:visited{
+					color: $darkgray;
 					text-decoration: none;
 				}
 		}
@@ -56,14 +69,14 @@
 }
 
 a{
-color: $green;
+color: $darkgray;
 text-decoration: none;
 	&:visited{
-		color: $green;
+		color: $darkgray;
 		text-decoration: none;
 	}
 	&:hover, &:active{
-		color: $green;
+		color: $seafoam;
 		text-decoration: none;
 	}
 }
@@ -72,16 +85,16 @@ text-decoration: none;
 	padding: 8px 15px;
 	font-size: 14px;
 	margin: 3px;
-	// background-color: $darkgray;
-	color: $green;
-	border: 2px solid $green;
+	// background-color: $platinum;
+	color: $darkgray;
+	border: 2px solid $darkgray;
 	display: inline-block;
 	-webkit-transition-duration: 0.5s; /* Safari */
-    transition-duration: 0.5s;
+		transition-duration: 0.5s;
 		&:hover, &:active, &:visited{
-			color: $green;
+			color: $darkgray;
 			text-decoration: none;
-			background-color: $lightgray;
+			background-color: $seafoam;
 		}
 }
 .inlineblock {
@@ -89,13 +102,13 @@ text-decoration: none;
 }
 
 .home {
-	background-image: url('http://i.imgur.com/qzLovJb.jpg');
+	background-image: url('http://i.imgur.com/UjFsPaq.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 100vh;
 
 		.home-bg {
-			background-color: rgba(255, 255, 255, 0.7);
+			background-color: rgba(128, 204, 149, 0.7);
 			padding: 30px 0;
 			margin-top: 125px;
 			-webkit-animation-name: bganimation; /* Safari 4.0 - 8.0 */
@@ -105,33 +118,36 @@ text-decoration: none;
 		}
 		/* Safari 4.0 - 8.0 */
 		@-webkit-keyframes bganimation {
-			from {background-color: rgba(255, 255, 255, 0.1)}
-			to {background-color: rgba(255, 255, 255, 0.7)}
+			from {background-color: rgba(128, 204, 149, 0.1)}
+			to {background-color: rgba(128, 204, 149, 0.7)}
 		}
 		@keyframes bganimation {
-			from {background-color: rgba(255, 255, 255, 0.1)}
-			to {background-color: rgba(255, 255, 255, 0.7)}
+			from {background-color: rgba(128, 204, 149, 0.1)}
+			to {background-color: rgba(128, 204, 149, 0.7)}
 		}
 		.hello {
 			font-size: 30px;
 			font-family: $serif;
+			color: $white;
 		}
 		.intro {
 			font-size: 20px;
+
 		}
 }
 
 .about {
-	background-image: url('http://i.imgur.com/p1otj7L.jpg');
+	background-image: url('http://i.imgur.com/mDPmKaC.jpg');
 	background-repeat: repeat;
 	height: 100vh;
 	padding: 50px;
 		a{
-			color: #9E9995;
+			color: $seafoam;
 		}
 		.profile-pic {
-			max-width: 100%;
-			border: 3px solid $rose;
+			width: 100%;
+			max-width: 475px;
+			border: 5px solid $seafoam;
 		}
 		.about-header {
 			font-size: 30px;
@@ -141,7 +157,7 @@ text-decoration: none;
 }
 
 .portfolio {
-	background-image: url('http://i.imgur.com/p1otj7L.jpg');
+	background-image: url('http://i.imgur.com/mDPmKaC.jpg');
 	background-repeat: repeat;
 	height: 100vh;
 	padding: 50px;
@@ -153,23 +169,23 @@ text-decoration: none;
 			margin-bottom: 10px;
 		}
 		.port-wrapper {
-  		 	padding: 5px;
-  		 	margin-bottom: 20px;
-    		background-color: #fff;
-    		border: 3px solid $lightgray;
-    		-webkit-transition: border .2s ease-in-out;
-    		transition: border .2s ease-in-out;
-    			img {
-    				width: 100%;
-    				border: 1px solid $lightgray;
-    				margin-top: 30px;
-    				max-width: 300px;
-    			}
+			 	padding: 5px;
+			 	margin-bottom: 20px;
+				background-color: #fff;
+				border: 3px solid $lightgray;
+				-webkit-transition: border .2s ease-in-out;
+				transition: border .2s ease-in-out;
+					img {
+						width: 100%;
+						border: 1px solid $lightgray;
+						margin-top: 30px;
+						max-width: 300px;
+					}
 		}
 }
 
 .experience {
-	background-image: url('http://i.imgur.com/p1otj7L.jpg');
+	background-image: url('http://i.imgur.com/mDPmKaC.jpg');
 	background-repeat: repeat;
 	height: 100vh;
 	padding: 50px;
@@ -187,7 +203,8 @@ text-decoration: none;
 		font-family: $serif;
 	}
 	.skills-bg {
-		background-color: rgba(255, 255, 255, 0.4);
+		background-color: $platinum;
+		border: 5px double $seafoam;
 		padding: 20px;
 	}
 	.exp-header {
@@ -201,7 +218,7 @@ text-decoration: none;
 		margin-bottom: 10px;
 	}
 	.lang-header {
-		border-top: 2px solid white;
+		border-top: 2px solid $seafoam;
 		margin-top: 10px;
 		padding-top: 5px;
 	}
@@ -209,7 +226,7 @@ text-decoration: none;
 
 
 .connect {
-	background-image: url('http://i.imgur.com/p1otj7L.jpg');
+	background-image: url('http://i.imgur.com/mDPmKaC.jpg');
 	background-repeat: repeat;
 	height: 100vh;
 	padding: 50px;
@@ -232,6 +249,6 @@ text-decoration: none;
 
 
 // @keyframes App-logo-spin {
-//   from { transform: rotate(0deg); }
-//   to { transform: rotate(360deg); }
+//	 from { transform: rotate(0deg); }
+//	 to { transform: rotate(360deg); }
 // }

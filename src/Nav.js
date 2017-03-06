@@ -18,7 +18,7 @@ class TopNav extends Component {
 			<div className="container-fluid app-header">
 
 					<div className="col-xs-12 col-sm-5 nav-name">
-						SARAH&nbsp;BASINGER<span className="seafoam-green glyphicon glyphicon-menu-right"></span>
+						<Link to='/'>SARAH&nbsp;BASINGER<span className="seafoam-green glyphicon glyphicon-menu-right"></span></Link>
 					</div>
 					<div className="col-sm-7 navbar">
 						<ul className="topnav" id="myTopnav">

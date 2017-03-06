@@ -12,6 +12,33 @@
 	font-size: 16px;
 }
 
+ul.topnav li.icon {display: none;}
+
+@media screen and (max-width:750px) {
+	.app-header {
+	height: 120px;
+	}
+	ul.topnav li:not(:first-child) {display: none;}
+	ul.topnav li.icon {
+		float: right;
+		display: inline-block;
+	}
+	ul.topnav.responsive {position: relative;}
+	ul.topnav.responsive li.icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	ul.topnav.responsive li {
+		float: none;
+		display: inline;
+	}
+	ul.topnav.responsive li a {
+		display: block;
+		text-align: left;
+	}	
+}
+
 .app-header {
 	background-color: $white;
 	height: 60px;
@@ -29,16 +56,18 @@
 		
 	}
 
+
+
 	.navbar {
 		
 		float: right;
-		ul{
+		.topnav{
 			float: right;
 		}
 		li{
 			list-style: none;
 			display: inline-block;
-			margin-right: 20px;
+			margin-right: 15px;
 			color: $darkgray;
 			text-decoration: none;
 					&:after{

@@ -56,8 +56,6 @@ ul.topnav li.icon {display: none;}
 		
 	}
 
-
-
 	.navbar {
 		
 		float: right;
@@ -188,7 +186,6 @@ text-decoration: none;
 .portfolio {
 	background-image: url('http://i.imgur.com/mDPmKaC.jpg');
 	background-repeat: repeat;
-	height: 100vh;
 	padding: 50px;
 		.port-header {
 			font-family: $serif;
@@ -216,7 +213,6 @@ text-decoration: none;
 .experience {
 	background-image: url('http://i.imgur.com/mDPmKaC.jpg');
 	background-repeat: repeat;
-	height: 100vh;
 	padding: 50px;
 	.Collapsible__trigger {
 		font-weight: 700;

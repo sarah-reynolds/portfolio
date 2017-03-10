@@ -17,16 +17,16 @@ class TopNav extends Component {
 		return (
 			<div className="container-fluid app-header">
 
-					<div className="col-xs-12 col-sm-5 nav-name">
-						<Link to='/'>SARAH&nbsp;BASINGER<span className="seafoam-green glyphicon glyphicon-menu-right"></span></Link>
+					<div className="col-xs-6 col-sm-5 nav-name">
+						<Link to='/'>SARAH&nbsp;BASINGER</Link><span id="arrow-glyph" className="seafoam-green glyphicon glyphicon-menu-right"></span>
 					</div>
-					<div className="col-sm-7 navbar">
+					<div className="col-sm-7 col-xs-1 navbar">
 						<ul className="topnav" id="myTopnav">
-							<li><Link to='/'>Home</Link></li>
-							<li><Link to='/about'>About</Link></li>
-							<li><Link to='/experience'>Experience</Link></li>
-							<li><Link to='/portfolio'>Projects</Link></li>
-							<li><Link to='/connect'>Connect</Link></li>
+							<li id="first-list-item" className="list-item"><Link to='/'>Home</Link></li>
+							<li className="list-item"><Link to='/about'>About</Link></li>
+							<li className="list-item"><Link to='/experience'>Experience</Link></li>
+							<li className="list-item"><Link to='/portfolio'>Projects</Link></li>
+							<li className="list-item"><Link to='/connect'>Connect</Link></li>
 							<li className="icon">
 								<a href="javascript:void(0)" onClick={this.navHamburger}>&#9776;</a>
 							</li>

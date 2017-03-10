@@ -1,19 +1,12 @@
+// MEDIA QUERIES ARE AT THE BOTTOM OF THIS FILE
+// -------------------------------
+
 @import "compass/utilities";
 @import "compass/css3";
 
-// CONFIGS
+// VARIABLES
 // -------------------------------
-@import "configs/variables";
-
-// LAYOUT
-// -------------------------------
-@import "layout/layout";
-@import "layout/header";
-@import "layout/footer";
-
-// VIEWS
-// -------------------------------
-@import "views/home";
+@import "variables";
 
 // FONTS
 // -------------------------------
@@ -23,6 +16,334 @@
 // -------------------------------
 @import url('https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css');
 
-// BOOTSTRAP
+
+// WHOLE APP WRAPPER - APPLIES TO ALL
 // -------------------------------
-// @import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u')
+.app {
+	font-family: $sans-serif;
+	font-weight: 300;
+	background-color: $white;
+	height: 100vh;
+	color: $darkgray;
+	font-size: 16px;
+	a{
+		color: $darkgray;
+		text-decoration: none;
+		&:visited{
+			color: $darkgray;
+			text-decoration: none;
+		}
+		&:hover, &:active{
+			color: $seafoam;
+			text-decoration: none;
+		}
+	}
+}
+
+
+// TOP NAV SECTION
+// -------------------------------
+ul.topnav li.icon {
+		display: none;
+	}
+
+.app-header {
+	background-color: $white;
+	height: 60px;
+	padding: 20px;
+	color: $darkgray;
+	font-family: $serif;
+	line-height: 15px;
+	border-bottom: $seafoam solid 1px;
+		.nav-name {
+		// min-width: 308px;
+
+			.seafoam-green{
+				color: $seafoam;
+				font-size: 24px;
+			}
+		
+	}
+	.navbar {
+		float: right;
+		.topnav{
+			float: right;
+		}
+		li{
+			list-style: none;
+			display: inline-block;
+			margin-right: 15px;
+			color: $darkgray;
+			text-decoration: none;
+				&:after{
+		 			content: '';
+					display: block;
+					height: 1px;
+					width: 0;
+					background: transparent;
+					transition: width .5s ease, background-color .5s ease;
+					text-decoration: none;
+				}
+				&:hover:after{
+					width: 100%;
+					background: $seafoam;
+					color: $seafoam;
+					text-decoration: none;
+				}
+				&:active{
+					text-decoration: none;
+					color: $seafoam;
+				}
+				&:visited{
+					color: $darkgray;
+					text-decoration: none;
+				}
+		}
+	}
+}
+
+// CUSTOM BUTTON STYLING
+// -------------------------------
+
+.custom-button {
+	padding: 8px 15px;
+	font-size: 14px;
+	margin: 3px;
+	// background-color: $platinum;
+	color: $darkgray;
+	border: 2px solid $darkgray;
+	display: inline-block;
+	-webkit-transition-duration: 0.5s; /* Safari */
+		transition-duration: 0.5s;
+		&:hover, &:active, &:visited{
+			color: $darkgray;
+			text-decoration: none;
+			background-color: $seafoam;
+		}
+}
+.inlineblock {
+	display: inline-block;
+}
+
+// HOME PAGE
+// -------------------------------
+.home {
+	background-image: url('http://i.imgur.com/UjFsPaq.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: auto;
+	min-height: 100vh;
+		.home-bg {
+			background-color: rgba(128, 204, 149, 0.7);
+			padding: 30px 0;
+			margin-top: 125px;
+			-webkit-animation-name: bganimation; /* Safari 4.0 - 8.0 */
+			-webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
+			animation-name: bganimation;
+			animation-duration: 5s;
+		}
+		/* Safari 4.0 - 8.0 */
+		@-webkit-keyframes bganimation {
+			from {background-color: rgba(128, 204, 149, 0.1)}
+			to {background-color: rgba(128, 204, 149, 0.7)}
+		}
+		@keyframes bganimation {
+			from {background-color: rgba(128, 204, 149, 0.1)}
+			to {background-color: rgba(128, 204, 149, 0.7)}
+		}
+		.hello {
+			font-size: 30px;
+			font-family: $serif;
+			color: $white;
+		}
+		.intro {
+			font-size: 20px;
+
+		}
+}
+
+// ABOUT PAGE
+// -------------------------------
+.about {
+	background-image: url('http://i.imgur.com/mDPmKaC.jpg');
+	background-repeat: repeat;
+	height: auto;
+	min-height: 100vh;
+	padding: 50px;
+		a{
+			color: $seafoam;
+		}
+		.profile-pic {
+			width: 100%;
+			max-width: 475px;
+			border: 5px solid $seafoam;
+		}
+		.about-header {
+			font-size: 30px;
+			font-family: $serif;
+			padding-top: 20px;
+		}
+}
+
+// PORTFOLIO PAGE
+// -------------------------------
+.portfolio {
+	background-image: url('http://i.imgur.com/mDPmKaC.jpg');
+	background-repeat: repeat;
+	height: auto;
+	min-height: 100vh;
+	padding: 50px;
+		.port-header {
+			font-family: $serif;
+			font-weight: 700;
+		}
+		.port-section {
+			margin-bottom: 10px;
+		}
+		.port-wrapper {
+			 	padding: 5px;
+			 	margin-bottom: 20px;
+				background-color: #fff;
+				border: 3px solid $lightgray;
+				-webkit-transition: border .2s ease-in-out;
+				transition: border .2s ease-in-out;
+					img {
+						width: 100%;
+						border: 1px solid $lightgray;
+						margin-top: 30px;
+						max-width: 300px;
+					}
+		}
+}
+
+// EXPERIENCE PAGE
+// -------------------------------
+.experience {
+	background-image: url('http://i.imgur.com/mDPmKaC.jpg');
+	background-repeat: repeat;
+	height: auto;
+	min-height: 100vh;
+	padding: 50px;
+	.Collapsible__trigger {
+
+		color: $darkgray;
+		font-size: 16px;
+		cursor: pointer;
+		text-decoration: underline;	
+		&:hover, &:active{
+				color: $seafoam;
+		}
+		
+	}
+	.skills-header{
+		font-weight: 700;
+		font-family: $serif;
+	}
+	.skills-bg {
+		background-color: $platinum;
+		border: 5px double $seafoam;
+		padding: 20px;
+	}
+	.exp-header {
+		font-weight: 700;
+	}
+
+	.lang-sym {
+		min-width: 45px;
+		font-size: 11px;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	.lang-header {
+		border-top: 2px solid $seafoam;
+		margin-top: 10px;
+		padding-top: 5px;
+	}
+}
+
+// CONNECT PAGE
+// -------------------------------
+.connect {
+	background-image: url('http://i.imgur.com/mDPmKaC.jpg');
+	background-repeat: repeat;
+	height: auto;
+	min-height: 100vh;
+	padding: 50px;
+		.form-label {
+			width: 15%;
+
+		}
+		.input{
+			width: 85%;
+			border: 1px solid $lightgray;
+		}
+		textarea {
+			height: 100px;
+		}
+	.connect-spacing{
+		line-height: 30px;
+	}
+}
+
+// MEDIA QUERIES FOR RESPONSIVE DESIGN
+// -------------------------------
+
+@media screen and (min-width:768px) {
+	.nav-name {
+		font-size: 30px;
+		min-width: 308px;
+	}
+
+}
+@media screen and (max-width:768px) {
+	#arrow-glyph{
+		display: none;
+	}
+	.nav-name {
+		font-size: 20px;
+		min-width: 170px;
+	}
+	.home-bg {
+		margin-top: 50px;
+	}
+	ul.topnav {
+		background-color: white;
+	}
+	ul.topnav li.list-item {
+		display: none;
+	}
+	#first-list-item {
+		padding-top: 60px;
+	}
+	ul.topnav li.icon {
+		float: right;
+		display: inline-block;
+		margin-right: 0px;
+	}
+	ul.topnav.responsive {
+		position: absolute;
+		top: 0px;
+		right: 15px;
+		z-index: 2;
+	}
+	ul.topnav.responsive li.icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+
+	}
+	ul.topnav.responsive li {
+		float: none;
+		display: inline;
+	}
+	ul.topnav.responsive li a {
+		display: block;
+		text-align: left;
+	}
+	// ul.topnav.responsive li.list-item {
+	// 	padding-right: 20px;
+	// }
+	ul.topnav.responsive#myTopnav {
+		padding: 10px;
+	}		
+}

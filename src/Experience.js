@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 // import Button from './Button';
 
-// import Collapsible from 'react-collapsible';
+import Collapsible from 'react-collapsible';
 
 
 class Experience extends Component {
@@ -18,7 +18,9 @@ class Experience extends Component {
       						<ul>
       							<li>DigitalCrafts (Nov 2016 - Mar 2017)</li>
       						</ul>
-      						<p>DigitalCrafts' 16 Week Immersive Bootcamp covers full-stack web development by teaching basic and advanced front-end web development (including React), JavaScript and the MEAN stack, as well as Python and MySQL.</p><br />
+      						<Collapsible trigger="More details >">
+      							<p>DigitalCrafts 16 Week Immersive Bootcamp covers full-stack web development by teaching basic and advanced front-end web development (including React), JavaScript and the MEAN stack, as well as Python and MySQL.</p><br />
+      						</Collapsible>
       					<h3 className="skills-header">Other Professional Experience</h3>
       						<br /><p className="exp-header">Email Marketing Management</p>
       						<ul>
@@ -26,13 +28,17 @@ class Experience extends Component {
       							<li>Email Manager and Team Lead at <span  data-toggle="popover" title="Marketing Services Provider giving marketers an integrated and optimized approach for delivering relevant messages from a single vendor.">Yes Lifecycle Marketing</span> (Oct 2015 - May 2016)</li>
       							<li>Email Marketing Manager at Cartera Commerce (Oct 2008 - Jul 2015)</li>
       						</ul>
-      						<p>I have managed all steps of the email marketing lifecycle,  including: gather assets and requisites from multiple stakeholders; advise on best practices; code responsive emails; perform extensive QA, including correcting rendering issues across multiple ESPs; perform data and list work; work with back end teams to manage and improve data flow; code dynamic content for personalization and targeting; verify opt-out process complies with CAN-SPAM; schedule deployments; manage transactional / service emails; manage special projects (launch new clients, implement new features, minify and clean up code, develop new automations and drip campaigns, integrate segmentation.</p>
+      						<Collapsible trigger="More details >">
+      							<p>I have managed all steps of the email marketing lifecycle,  including: gather assets and requisites from multiple stakeholders; advise on best practices; code responsive emails; perform extensive QA, including correcting rendering issues across multiple ESPs; perform data and list work; work with back end teams to manage and improve data flow; code dynamic content for personalization and targeting; verify opt-out process complies with CAN-SPAM; schedule deployments; manage transactional / service emails; manage special projects (launch new clients, implement new features, minify and clean up code, develop new automations and drip campaigns, integrate segmentation.</p>
+      						</Collapsible>
       						<br /><p className="exp-header">Marketing, Administrative, and Production Support</p>
       						<ul>
       							<li>Marketing Assistant at Morris Visitor Publications (Dec 2006 - Oct 2008)</li>
       							<li>Marketing Assistant at IBC Worldwide (Jun 2004 - Dec 2006)</li>
       						</ul>
-      						<p>Provided administrative, production, creative, graphic, photographic, sales and marketing support for marketing executives and teams.</p>
+      						<Collapsible trigger="More details >">
+      							<p>Provided administrative, production, creative, graphic, photographic, sales and marketing support for marketing executives and teams.</p><br />
+      						</Collapsible>
 					</div>
 
 					{/* ======== SKILLS ======== */}

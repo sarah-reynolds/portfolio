@@ -13,7 +13,7 @@ class Portfolio_portfolio extends Component {
 						<h3 className="port-header">SarahBasinger.com Portfolio</h3>
 						<div className="row">
 							
-							<div className="col-md-10 col-md-offset-1">
+							<div className="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1">
 								
 								<p className="port-section">This is my personal portfolio website for showing my work as a developer.</p>
 									<BtnExternal linkTo={"https://github.com/sarahbasinger/portfolio"} buttonText={"GitHub"} />
@@ -22,7 +22,7 @@ class Portfolio_portfolio extends Component {
 						</div>
 						<div className="row">
 							
-							<div className="col-md-4 col-md-offset-1 col-sm-12"><br />
+							<div className="col-md-4 col-md-offset-1 col-xs-10 col-xs-offset-1"><br />
 								<h4 className="port-header">Technologies used</h4>
 								<p className="port-section">
 									<ul>
@@ -35,7 +35,7 @@ class Portfolio_portfolio extends Component {
 									</ul>
 								</p>
 							</div>
-							<div className="col-md-5 col-sm-12">
+							<div className="col-md-5 col-md-offset-0 col-xs-10 col-xs-offset-1">
 								<img src="/images/portfolio_screenshot.png" role="presentation" />
 							</div>
 						</div>

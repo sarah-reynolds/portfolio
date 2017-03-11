@@ -19,7 +19,7 @@ class Experience extends Component {
       							<li>DigitalCrafts (Nov 2016 - Mar 2017)</li>
       						</ul>
       						<Collapsible trigger="More details >">
-      							<p>DigitalCrafts 16 Week Immersive Bootcamp covers full-stack web development by teaching basic and advanced front-end web development (including React), JavaScript and the MEAN stack, as well as Python and MySQL.</p><br />
+      							<p>DigitalCrafts' 16 Week Immersive Bootcamp covers full-stack web development by teaching basic and advanced front-end web development (including React), JavaScript and the MEAN stack, as well as Python and MySQL.</p><br />
       						</Collapsible><br />
       					<h3 className="skills-header">Other Professional Experience</h3>
       						<br /><p className="exp-header">Email Marketing Management</p>

@@ -124,6 +124,24 @@ ul.topnav li.icon {
 			background-color: $seafoam;
 		}
 }
+
+.back-button {
+	padding: 8px 15px;
+	font-size: 14px;
+	margin: 3px;
+	// background-color: $platinum;
+	color: $darkgray;
+	border: 2px solid $darkgray;
+	display: inline-block;
+	-webkit-transition-duration: 0.5s; /* Safari */
+		transition-duration: 0.5s;
+		&:hover, &:active, &:visited{
+			color: $darkgray;
+			text-decoration: none;
+			background-color: $seafoam;
+		}
+}
+
 .inlineblock {
 	display: inline-block;
 }
@@ -305,7 +323,7 @@ ul.topnav li.icon {
 		min-width: 308px;
 	}
 	.home-bg {
-		margin-top: 125px;
+		margin-top: 75px;
 	}
 
 }

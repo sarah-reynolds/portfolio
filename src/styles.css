@@ -53,7 +53,11 @@ ul.topnav li.icon {
 .app-header .navbar .topnav {
   float: right;
 }
-/* line 72, ../compass/sass/styles.scss */
+/* line 71, ../compass/sass/styles.scss */
+.app-header .navbar .topnav #hamburger {
+  font-size: 30px;
+}
+/* line 75, ../compass/sass/styles.scss */
 .app-header .navbar li {
   list-style: none;
   display: inline-block;
@@ -61,7 +65,7 @@ ul.topnav li.icon {
   color: #373737;
   text-decoration: none;
 }
-/* line 78, ../compass/sass/styles.scss */
+/* line 81, ../compass/sass/styles.scss */
 .app-header .navbar li:after {
   content: '';
   display: block;
@@ -71,25 +75,25 @@ ul.topnav li.icon {
   transition: width .5s ease, background-color .5s ease;
   text-decoration: none;
 }
-/* line 87, ../compass/sass/styles.scss */
+/* line 90, ../compass/sass/styles.scss */
 .app-header .navbar li:hover:after {
   width: 100%;
   background: #80CC95;
   color: #80CC95;
   text-decoration: none;
 }
-/* line 93, ../compass/sass/styles.scss */
+/* line 96, ../compass/sass/styles.scss */
 .app-header .navbar li:active {
   text-decoration: none;
   color: #80CC95;
 }
-/* line 97, ../compass/sass/styles.scss */
+/* line 100, ../compass/sass/styles.scss */
 .app-header .navbar li:visited {
   color: #373737;
   text-decoration: none;
 }
 
-/* line 108, ../compass/sass/styles.scss */
+/* line 111, ../compass/sass/styles.scss */
 .custom-button {
   padding: 8px 15px;
   font-size: 14px;
@@ -101,19 +105,19 @@ ul.topnav li.icon {
   /* Safari */
   transition-duration: 0.5s;
 }
-/* line 118, ../compass/sass/styles.scss */
+/* line 121, ../compass/sass/styles.scss */
 .custom-button:hover, .custom-button:active, .custom-button:visited {
   color: #373737;
   text-decoration: none;
   background-color: #80CC95;
 }
 
-/* line 124, ../compass/sass/styles.scss */
+/* line 127, ../compass/sass/styles.scss */
 .inlineblock {
   display: inline-block;
 }
 
-/* line 130, ../compass/sass/styles.scss */
+/* line 133, ../compass/sass/styles.scss */
 .home {
   background-image: url("http://i.imgur.com/UjFsPaq.jpg");
   background-repeat: no-repeat;
@@ -122,11 +126,10 @@ ul.topnav li.icon {
   min-height: 100vh;
   /* Safari 4.0 - 8.0 */
 }
-/* line 136, ../compass/sass/styles.scss */
+/* line 139, ../compass/sass/styles.scss */
 .home .home-bg {
   background-color: rgba(128, 204, 149, 0.7);
   padding: 30px 0;
-  margin-top: 125px;
   -webkit-animation-name: bganimation;
   /* Safari 4.0 - 8.0 */
   -webkit-animation-duration: 5s;
@@ -150,18 +153,18 @@ ul.topnav li.icon {
     background-color: rgba(128, 204, 149, 0.7);
   }
 }
-/* line 154, ../compass/sass/styles.scss */
+/* line 157, ../compass/sass/styles.scss */
 .home .hello {
   font-size: 30px;
   font-family: "Playfair Display", serif;
   color: white;
 }
-/* line 159, ../compass/sass/styles.scss */
+/* line 162, ../compass/sass/styles.scss */
 .home .intro {
   font-size: 20px;
 }
 
-/* line 167, ../compass/sass/styles.scss */
+/* line 170, ../compass/sass/styles.scss */
 .about {
   background-image: url("http://i.imgur.com/mDPmKaC.jpg");
   background-repeat: repeat;
@@ -169,24 +172,24 @@ ul.topnav li.icon {
   min-height: 100vh;
   padding: 50px;
 }
-/* line 173, ../compass/sass/styles.scss */
+/* line 176, ../compass/sass/styles.scss */
 .about a {
   color: #80CC95;
 }
-/* line 176, ../compass/sass/styles.scss */
+/* line 179, ../compass/sass/styles.scss */
 .about .profile-pic {
   width: 100%;
   max-width: 475px;
   border: 5px solid #80CC95;
 }
-/* line 181, ../compass/sass/styles.scss */
+/* line 184, ../compass/sass/styles.scss */
 .about .about-header {
   font-size: 30px;
   font-family: "Playfair Display", serif;
   padding-top: 20px;
 }
 
-/* line 190, ../compass/sass/styles.scss */
+/* line 193, ../compass/sass/styles.scss */
 .portfolio {
   background-image: url("http://i.imgur.com/mDPmKaC.jpg");
   background-repeat: repeat;
@@ -194,16 +197,16 @@ ul.topnav li.icon {
   min-height: 100vh;
   padding: 50px;
 }
-/* line 196, ../compass/sass/styles.scss */
+/* line 199, ../compass/sass/styles.scss */
 .portfolio .port-header {
   font-family: "Playfair Display", serif;
   font-weight: 700;
 }
-/* line 200, ../compass/sass/styles.scss */
+/* line 203, ../compass/sass/styles.scss */
 .portfolio .port-section {
   margin-bottom: 10px;
 }
-/* line 203, ../compass/sass/styles.scss */
+/* line 206, ../compass/sass/styles.scss */
 .portfolio .port-wrapper {
   padding: 5px;
   margin-bottom: 20px;
@@ -212,7 +215,7 @@ ul.topnav li.icon {
   -webkit-transition: border .2s ease-in-out;
   transition: border .2s ease-in-out;
 }
-/* line 210, ../compass/sass/styles.scss */
+/* line 213, ../compass/sass/styles.scss */
 .portfolio .port-wrapper img {
   width: 100%;
   border: 1px solid #F4F4F4;
@@ -220,7 +223,7 @@ ul.topnav li.icon {
   max-width: 300px;
 }
 
-/* line 221, ../compass/sass/styles.scss */
+/* line 224, ../compass/sass/styles.scss */
 .experience {
   background-image: url("http://i.imgur.com/mDPmKaC.jpg");
   background-repeat: repeat;
@@ -228,47 +231,57 @@ ul.topnav li.icon {
   min-height: 100vh;
   padding: 50px;
 }
-/* line 227, ../compass/sass/styles.scss */
+/* line 230, ../compass/sass/styles.scss */
 .experience .Collapsible__trigger {
   color: #373737;
   font-size: 16px;
   cursor: pointer;
   text-decoration: underline;
+  padding-left: 24px;
 }
-/* line 233, ../compass/sass/styles.scss */
+/* line 237, ../compass/sass/styles.scss */
 .experience .Collapsible__trigger:hover, .experience .Collapsible__trigger:active {
   color: #80CC95;
 }
-/* line 238, ../compass/sass/styles.scss */
+/* line 241, ../compass/sass/styles.scss */
+.experience .Collapsible__contentOuter {
+  padding-left: 24px;
+  padding-top: 5px;
+}
+/* line 245, ../compass/sass/styles.scss */
 .experience .skills-header {
   font-weight: 700;
   font-family: "Playfair Display", serif;
 }
-/* line 242, ../compass/sass/styles.scss */
+/* line 250, ../compass/sass/styles.scss */
+.experience .learn-more {
+  margin-left: 10px;
+}
+/* line 253, ../compass/sass/styles.scss */
 .experience .skills-bg {
   background-color: #E8E8E8;
   border: 5px double #80CC95;
   padding: 20px;
 }
-/* line 247, ../compass/sass/styles.scss */
+/* line 258, ../compass/sass/styles.scss */
 .experience .exp-header {
   font-weight: 700;
 }
-/* line 251, ../compass/sass/styles.scss */
+/* line 262, ../compass/sass/styles.scss */
 .experience .lang-sym {
-  min-width: 45px;
+  min-width: 60px;
   font-size: 11px;
   text-align: center;
   margin-bottom: 10px;
 }
-/* line 257, ../compass/sass/styles.scss */
+/* line 268, ../compass/sass/styles.scss */
 .experience .lang-header {
   border-top: 2px solid #80CC95;
   margin-top: 10px;
   padding-top: 5px;
 }
 
-/* line 266, ../compass/sass/styles.scss */
+/* line 277, ../compass/sass/styles.scss */
 .connect {
   background-image: url("http://i.imgur.com/mDPmKaC.jpg");
   background-repeat: repeat;
@@ -276,71 +289,76 @@ ul.topnav li.icon {
   min-height: 100vh;
   padding: 50px;
 }
-/* line 272, ../compass/sass/styles.scss */
+/* line 283, ../compass/sass/styles.scss */
 .connect .form-label {
   width: 15%;
 }
-/* line 276, ../compass/sass/styles.scss */
+/* line 287, ../compass/sass/styles.scss */
 .connect .input {
   width: 85%;
   border: 1px solid #F4F4F4;
 }
-/* line 280, ../compass/sass/styles.scss */
+/* line 291, ../compass/sass/styles.scss */
 .connect textarea {
   height: 100px;
 }
-/* line 283, ../compass/sass/styles.scss */
+/* line 294, ../compass/sass/styles.scss */
 .connect .connect-spacing {
   line-height: 30px;
 }
 
 @media screen and (min-width: 768px) {
-  /* line 292, ../compass/sass/styles.scss */
+  /* line 303, ../compass/sass/styles.scss */
   .nav-name {
     font-size: 30px;
     min-width: 308px;
   }
+
+  /* line 307, ../compass/sass/styles.scss */
+  .home-bg {
+    margin-top: 125px;
+  }
 }
 @media screen and (max-width: 768px) {
-  /* line 299, ../compass/sass/styles.scss */
+  /* line 313, ../compass/sass/styles.scss */
   #arrow-glyph {
     display: none;
   }
 
-  /* line 302, ../compass/sass/styles.scss */
+  /* line 316, ../compass/sass/styles.scss */
   .nav-name {
     font-size: 20px;
     min-width: 170px;
   }
 
-  /* line 306, ../compass/sass/styles.scss */
+  /* line 320, ../compass/sass/styles.scss */
   .home-bg {
-    margin-top: 50px;
+    margin-top: 10px;
   }
 
-  /* line 309, ../compass/sass/styles.scss */
+  /* line 323, ../compass/sass/styles.scss */
   ul.topnav {
     background-color: white;
   }
 
-  /* line 312, ../compass/sass/styles.scss */
+  /* line 326, ../compass/sass/styles.scss */
   ul.topnav li.list-item {
     display: none;
   }
 
-  /* line 315, ../compass/sass/styles.scss */
+  /* line 329, ../compass/sass/styles.scss */
   #first-list-item {
     padding-top: 60px;
   }
 
-  /* line 318, ../compass/sass/styles.scss */
+  /* line 332, ../compass/sass/styles.scss */
   ul.topnav li.icon {
     float: right;
     display: inline-block;
     margin-right: 0px;
   }
 
-  /* line 323, ../compass/sass/styles.scss */
+  /* line 337, ../compass/sass/styles.scss */
   ul.topnav.responsive {
     position: absolute;
     top: 0px;
@@ -348,26 +366,26 @@ ul.topnav li.icon {
     z-index: 2;
   }
 
-  /* line 329, ../compass/sass/styles.scss */
+  /* line 343, ../compass/sass/styles.scss */
   ul.topnav.responsive li.icon {
     position: absolute;
     right: 0;
     top: 0;
   }
 
-  /* line 335, ../compass/sass/styles.scss */
+  /* line 349, ../compass/sass/styles.scss */
   ul.topnav.responsive li {
     float: none;
     display: inline;
   }
 
-  /* line 339, ../compass/sass/styles.scss */
+  /* line 353, ../compass/sass/styles.scss */
   ul.topnav.responsive li a {
     display: block;
     text-align: left;
   }
 
-  /* line 346, ../compass/sass/styles.scss */
+  /* line 360, ../compass/sass/styles.scss */
   ul.topnav.responsive#myTopnav {
     padding: 10px;
   }

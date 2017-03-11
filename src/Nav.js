@@ -28,7 +28,7 @@ class TopNav extends Component {
 							<li className="list-item"><Link to='/portfolio'>Projects</Link></li>
 							<li className="list-item"><Link to='/connect'>Connect</Link></li>
 							<li className="icon">
-								<a href="javascript:void(0)" onClick={this.navHamburger}>&#9776;</a>
+								<a id="hamburger" href="javascript:void(0)" onClick={this.navHamburger}>&#8801;</a>
 							</li>
 						</ul>
 					</div>

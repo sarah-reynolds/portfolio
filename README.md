@@ -1,6 +1,14 @@
-# Sarah Basinger - Full Stack Web Developer  
-## Portfolio  
+# Sarah Basinger - Full-stack Web Developer  
+### Portfolio  
 React website for showcasing my work as a web developer.
+
+### Technologies 
+HTML 
+CSS 
+JavaScript 
+Bootstrap 
+React 
+Sass
 
 ### Dependencies
 ```

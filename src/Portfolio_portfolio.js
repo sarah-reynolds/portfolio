@@ -15,7 +15,7 @@ class Portfolio_portfolio extends Component {
 							
 							<div className="col-md-10 col-md-offset-1">
 								
-								<p className="port-section">A Harry Potter themed game built using canvas. The user plays as Harry Potter on a broom, and uses the arrow keys on the keyboard to catch as many golden snitches possible in 30 seconds. Being hit by a the bludger will slow you down for 3 seconds. High scores are stored in each browser session.</p>
+								<p className="port-section">This is my personal portfolio website for showing my work as a developer.</p>
 									<BtnExternal linkTo={"https://github.com/sarahbasinger/portfolio"} buttonText={"GitHub"} />
 							</div>
 							
@@ -36,7 +36,7 @@ class Portfolio_portfolio extends Component {
 								</p>
 							</div>
 							<div className="col-md-5 col-sm-12">
-								<img src="http://i.imgur.com/IirSSso.png" role="presentation" />
+								<img src="/images/portfolio_screenshot.png" role="presentation" />
 							</div>
 						</div>
 							<div className="row">

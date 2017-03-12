@@ -15,7 +15,7 @@ class Portfolio_canigo extends Component {
 							<BtnExternal linkTo={"https://vimeo.com/207800621"} buttonText={"Demo"} />
 						</div>
 						<div className="col-md-3 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-12">
-							<img src="http://i.imgur.com/JMlufg4.png" role="presentation" />
+							<img src="/images/canigo_screenshot.png" role="presentation" />
 						</div>
 						<div className="row">
 							

@@ -213,7 +213,7 @@ ul.topnav li.icon {
 	background-repeat: repeat;
 	height: auto;
 	min-height: 100vh;
-	padding: 50px;
+	// padding: 50px;
 		.port-header {
 			font-family: $serif;
 			font-weight: 700;
@@ -325,11 +325,17 @@ ul.topnav li.icon {
 	.home-bg {
 		margin-top: 125px;
 	}
+	.portfolio {
+		padding: 50px;
+	}
 
 }
 @media screen and (max-width:768px) {
 	#arrow-glyph{
 		display: none;
+	}
+	.portfolio {
+		padding: 0px;
 	}
 	.nav-name {
 		font-size: 20px;

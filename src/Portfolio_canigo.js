@@ -10,16 +10,16 @@ class Portfolio_canigo extends Component {
 				<div className="row">
 					<div className="port-wrapper col-xs-12">
 						<h3 className="port-header">&nbsp;CaniGo.co</h3>
-						<div className="col-md-6 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1"><br />
+						<div className="col-md-6 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12"><br />
 							<p className="port-section">CaniGo.co is an app designed for spontaneous travelers who want to see more of the world. Users enter their place of origin, travel dates, and budget, then CaniGo.co will display destination options within their specified budget. The UI is simple, while scripts are running behind the scene, making api calls and filtering the results to match the user's input.</p>
 							<BtnExternal linkTo={"https://vimeo.com/207800621"} buttonText={"Demo"} />
 						</div>
-						<div className="col-md-3 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+						<div className="col-md-3 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-12">
 							<img src="http://i.imgur.com/JMlufg4.png" role="presentation" />
 						</div>
 						<div className="row">
 							
-							<div className="col-md-3 col-md-offset-1 col-xs-10 col-xs-offset-1">
+							<div className="col-md-3 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
 								<h4 className="port-header">Technologies used</h4>
 								<div className="port-section">
 									<ul>
@@ -33,7 +33,7 @@ class Portfolio_canigo extends Component {
 									</ul>
 								</div>
 							</div>
-							<div className="col-md-7 col-md-offset-0 col-xs-10 col-xs-offset-1">
+							<div className="col-md-7 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-12">
 								<h4 className="port-header">Status</h4>
 								<div className="port-section">
 									<ul>
@@ -47,22 +47,22 @@ class Portfolio_canigo extends Component {
 						
 
 						<div className="row">	
-							<div className="col-xs-10 col-xs-offset-1">
+							<div className="col-sm-10 col-sm-offset-1 col-xs-12">
 								<h4 className="port-header">Dev team</h4>
 								<div className="port-section">
-									<div>Sarah Basinger&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://github.com/sarahbasinger" target="_none">@sarahbasinger</a></div>
+									<div><strong>Sarah Basinger&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://github.com/sarahbasinger" target="_none">@sarahbasinger</a></strong></div>
 									<p>Sarah was the scrum master, and focused on design and graphics, as well as general web development.</p>
 								</div>
 								<div className="port-section">
-									<div>Ryan Ramdehol&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://github.com/rramdehol" target="_none">@rramdehol</a></div>
+									<div><strong>Ryan Ramdehol&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://github.com/rramdehol" target="_none">@rramdehol</a></strong></div>
 									<p>Ryan came up with the app idea, and focused on algorithms, as well as general web development.</p>
 								</div>
 								<div className="port-section">
-									<div>Andy Tuttle&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://github.com/AndyTuttle12" target="_none">@AndyTuttle12</a></div>
+									<div><strong>Andy Tuttle&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://github.com/AndyTuttle12" target="_none">@AndyTuttle12</a></strong></div>
 									<p>Andy focused on CSS styling as well as general web development.</p>
 								</div>
 								<div className="port-section">
-									<div>Daniel Crowder&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://github.com/bullutk" target="_none">@bullutk</a></div>
+									<div><strong>Daniel Crowder&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://github.com/bullutk" target="_none">@bullutk</a></strong></div>
 									<p>Daniel focused on the React component structure as well as general web development.</p>
 								</div>
 							</div>

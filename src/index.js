@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import './styles.css';
-import { Router, Route, hashHistory, IndexRoute } from 'react-router';
+import { Router, Route, browserHistory, IndexRoute } from 'react-router';
 import Home from './Home';
 import About from './About';
 import Experience from './Experience';
@@ -14,7 +14,7 @@ import Portfolio_portfolio from './Portfolio_portfolio';
 import Connect from './Connect';
 
 ReactDOM.render(
-	<Router history={hashHistory} >
+	<Router history={browserHistory} >
 		<Route path='/' component={App} >
 			<IndexRoute component={Home} />
 			<Route path='/about' component={About} />

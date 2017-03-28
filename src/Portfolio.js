@@ -13,11 +13,11 @@ class Portfolio extends Component {
 						<div className="port-wrapper col-xs-12">
 							<div className="col-md-6 col-sm-12">
 								<h3 className="port-header">CaniGo.co</h3>
-								<p className="port-section">Vacation destination app made for the spontaneous traveler.</p>
+								<p className="port-section">Vacation destination site made for the spontaneous traveler.</p>
 								<Button linkTo={"/canigo"} buttonText={"Learn more"} />
 							</div>
 							<div className="col-md-6 col-sm-12">
-								<img src="/images/screenshot1.png" role="presentation" />
+								<img src="/images/canigo_screenshot2.png" role="presentation" />
 							</div>
 						</div>
 					</div>

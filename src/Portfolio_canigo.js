@@ -10,36 +10,37 @@ class Portfolio_canigo extends Component {
 				<div className="row">
 					<div className="port-wrapper col-xs-12">
 						<h3 className="port-header">&nbsp;CaniGo.co</h3>
-						<div className="col-md-6 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12"><br />
-							<p className="port-section">CaniGo.co is an app designed for spontaneous travelers who want to see more of the world. Users enter their place of origin, travel dates, and budget, then CaniGo.co will display destination options within their specified budget. The UI is simple, while scripts are running behind the scene, making api calls and filtering the results to match the user's input.</p>
-							<BtnExternal linkTo={"https://vimeo.com/207800621"} buttonText={"Demo"} />
+						<div className="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12"><br />
+							<p className="port-section">CaniGo.co is a website designed for spontaneous travelers who want to see more of the world. Users enter their place of origin, travel dates, and budget, then CaniGo.co will display destination options within their budget. The UI is simple, while scripts are running behind the scene, making api calls and filtering the results to match the user's input. CaniGo.co was built by Sarah Basinger (<a href="https://github.com/sarahbasinger" target="_blank">github.com/sarahbasinger</a>), Daniel Crowder (<a href="https://github.com/bullutk" target="_blank">github.com/bullutk</a>), Andy Tuttle (<a href="https://github.com/AndyTuttle12" target="_blank">github.com/AndyTuttle12</a>), and Ryan Ramdehol (<a href="https://github.com/rramdehol" target="_blank">github.com/rramdehol</a>).</p>
+							<BtnExternal linkTo={"http://www.canigo.co"} buttonText={"Live Demo*"} /><br />
+							* Please choose ATL or NYC for origin, and travel dates of 4/22/17 - 4/29/17. This is due to API restrictions while we are in the prototyping phase. 
 						</div>
-						<div className="col-md-3 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-12">
-							<img src="/images/canigo_screenshot.png" role="presentation" />
-						</div>
+
 						<div className="row">
 							
-							<div className="col-md-3 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
+							<div className="col-md-6 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
+								<video width="450" height="350" controls>
+									<source src="/images/canigo_demo_video3.mp4" type="video/mp4" />
+									Your browser does not support video.
+								</video>
+							</div>
+
+							<div className="col-md-4 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-12">
 								<h4 className="port-header">Technologies used</h4>
 								<div className="port-section">
 									<ul>
 										<li>HTML</li>
 										<li>CSS</li>
-										<li>Bootstrap</li>
+										<li>Sass</li>
 										<li>JavaScript</li>
-										<li>React</li>
 										<li>jQuery</li>
-										<li>SkyScanner API</li>
-									</ul>
-								</div>
-							</div>
-							<div className="col-md-7 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-12">
-								<h4 className="port-header">Status</h4>
-								<div className="port-section">
-									<ul>
-										<li>The demo above is Phase 1, front-end only, MVP built in 1 week</li>
-										<li>The GitHub is currently set to private, as the CaniGo.co team works to launch the app to the public. I am happy to show the GitHub and ReadMe in person.</li>
-										<li>Phase 2 (full-stack with many improvements) is in progress with an expected launch date of March 24, 2017</li>
+										<li>JSX</li>
+										<li>React</li>
+										<li>Redux</li>
+										<li>Express</li>
+										<li>MySQL</li>
+										<li>Node.js</li>
+										<li><a href="https://sandbox.amadeus.com/api-catalog" target="_blank">Amadeus API</a></li>
 									</ul>
 								</div>
 							</div>
@@ -48,22 +49,45 @@ class Portfolio_canigo extends Component {
 
 						<div className="row">	
 							<div className="col-sm-10 col-sm-offset-1 col-xs-12">
-								<h4 className="port-header">Dev team</h4>
+								<h4 className="port-header">How it works</h4>
 								<div className="port-section">
-									<div><strong>Sarah Basinger&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://github.com/sarahbasinger" target="_none">@sarahbasinger</a></strong></div>
-									<p>Sarah was the scrum master, and focused on design and graphics, as well as general web development.</p>
+									<p>Users enter their preferences on the search page - how many travelers, whether they need flights / car rental / hotel, their origin airport code, departure date, return date, and budget.</p>
+
+									<p>These inputs are sent to the back-end via React Redux. On the back end, the Amadeus API is called multiple times to pull results for destination locations, then flight/car/hotel details for each destination. Many of these calls are made using Promises for the cases when any calls are dependent on data from previous calls. If the total cost for a vacation package is within the budget, the destination objects are sent to the front end.</p>
+
+									<p>Next, the front end maps through the objects and displays each destination in a card on a carousel. The columns are split up by region for easy browsing.</p>
+
+									<p>The user then clicks into the individual cards to view more information about that specific destination, including flight, hotel, and car rental details. The user can go back and view more locations, or book the trip.</p>
 								</div>
+							</div>
+						</div>
+
+						<div className="row">	
+							<div className="col-sm-10 col-sm-offset-1 col-xs-12">
+								<h4 className="port-header">Code snippet</h4>
 								<div className="port-section">
-									<div><strong>Ryan Ramdehol&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://github.com/rramdehol" target="_none">@rramdehol</a></strong></div>
-									<p>Ryan came up with the app idea, and focused on algorithms, as well as general web development.</p>
-								</div>
-								<div className="port-section">
-									<div><strong>Andy Tuttle&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://github.com/AndyTuttle12" target="_none">@AndyTuttle12</a></strong></div>
-									<p>Andy focused on CSS styling as well as general web development.</p>
-								</div>
-								<div className="port-section">
-									<div><strong>Daniel Crowder&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://github.com/bullutk" target="_none">@bullutk</a></strong></div>
-									<p>Daniel focused on the React component structure as well as general web development.</p>
+									<p>Back end architecture of promises:<br />
+									- Create promises within a function for each necessary API call<br />
+									- Start with the Flight Inspiration Search. This API call will pull back trip destination options.</p>
+									
+									<code><br />
+									{"function flightInspiration(url){ "} <br />
+										&nbsp;{" return new Promise(function(resolve, reject){ "} <br />
+											&nbsp;&nbsp;&nbsp;&nbsp;{" var inspirationSearch = request(url,function(error, response, body){ "} <br />
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" // the api response comes back as a string, so we need to parse it to make it an object we can work with "} <br />
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" var parsedBody = JSON.parse(body); "} <br />
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" var destinationsArray = []; "} <br />
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" // map through the results and push each destination iata to an array "} <br />
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" parsedBody.results.map((currentValue, currentIndex)=>{ "} <br />
+													&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" destinationsArray.push({iata: currentValue.destination}) "} <br />
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" }) "} <br />
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" // resolve the promise "} <br />
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" resolve(destinationsArray) "} <br />
+											&nbsp;&nbsp;&nbsp;&nbsp;{" }) "} <br />
+										&nbsp;{" }) "} <br />
+									{" } "} <br />
+									</code>
+									
 								</div>
 							</div>
 						</div>

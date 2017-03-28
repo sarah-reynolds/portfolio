@@ -245,6 +245,10 @@ ul.topnav li.icon {
 	height: auto;
 	min-height: 100vh;
 	padding: 50px;
+	.resume-button{
+		float: right;
+		padding-top: 20px;
+	}
 	.Collapsible__trigger {
 
 		color: $darkgray;

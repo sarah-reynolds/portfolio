@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 // import Button from './Button';
-
+import BtnExternal from './BtnExternal';
 import Collapsible from 'react-collapsible';
 
 
@@ -13,13 +13,15 @@ class Experience extends Component {
 
 					{/* ======== EXPERIENCE ======== */}
 					<div className="col-sm-7 col-xs-12">
-						<h3 className="skills-header">Web Development</h3>
+						<div className="col-xs-5"><h3 className="skills-header">Web Development</h3></div>
+						<div className="col-xs-5 resume-button text-right"><BtnExternal linkTo={"/sbasinger_resume.pdf"} buttonText={"Resume"} /></div>
+						<div className="col-xs-12">
       						<br /><p className="exp-header">Full-Stack Web Development Student</p>
       						<ul>
       							<li>DigitalCrafts (Nov 2016 - Mar 2017)</li>
       						</ul>
       						<Collapsible trigger="More details >">
-      							<p>DigitalCrafts' 16 Week Immersive Bootcamp covers full-stack web development by teaching basic and advanced front-end web development (including React), JavaScript and the MERN stack, as well as Python and MySQL.</p><br />
+      							<p>DigitalCrafts{"'"} 16 Week Immersive Bootcamp covers full-stack web development by teaching basic and advanced front-end web development (including React), JavaScript and the MERN stack, as well as Python and MySQL.</p><br />
       						</Collapsible><br />
       					<h3 className="skills-header">Other Professional Experience</h3>
       						<br /><p className="exp-header">Email Marketing Management</p>
@@ -39,6 +41,7 @@ class Experience extends Component {
       						<Collapsible trigger="More details >">
       							<p>Provided administrative, production, creative, graphic, photographic, sales and marketing support for marketing executives and teams.</p><br />
       						</Collapsible><br />
+      					</div>
 					</div>
 
 					{/* ======== SKILLS ======== */}
@@ -164,7 +167,7 @@ class Experience extends Component {
 
 							</div>
 							<div className="col-xs-12 lang-header">
-								<p className="skills-header">What I'm learning</p>
+								<p className="skills-header">What I{"'"}m learning</p>
 								
 								<div className="col-xs-4 lang-sym">
 									<svg width="60" viewBox="0 0 160 130">

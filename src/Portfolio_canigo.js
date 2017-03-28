@@ -74,7 +74,7 @@ class Portfolio_canigo extends Component {
 									{"function flightInspiration(url){ "} <br />
 										&nbsp;{" return new Promise(function(resolve, reject){ "} <br />
 											&nbsp;&nbsp;&nbsp;&nbsp;{" var inspirationSearch = request(url,function(error, response, body){ "} <br />
-												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" // the api response comes back as a string, so we need to parse it to make it an object we can work with "} <br />
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" // the api response comes back as a string, so we need to parse it into an object "} <br />
 												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" var parsedBody = JSON.parse(body); "} <br />
 												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" var destinationsArray = []; "} <br />
 												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" // map through the results and push each destination iata to an array "} <br />

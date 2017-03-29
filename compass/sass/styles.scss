@@ -26,6 +26,7 @@
 	height: 100vh;
 	color: $darkgray;
 	font-size: 16px;
+	padding-top: 60px;
 	a{
 		color: $darkgray;
 		text-decoration: none;
@@ -40,6 +41,29 @@
 	}
 }
 
+// BOTTOM NAV SECTION
+// -------------------------------
+#bottom-nav{
+	background-color: $white;
+	height: 30px;
+	padding: 5px;
+	color: $darkgray;
+	font-family: $serif;
+	line-height: 15px;
+	border-top: $seafoam solid 1px;
+	overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    bottom: 0; /* Position the navbar at the top of the page */
+    width: 100%; 
+    .btmnav{
+    	padding-left:16px;
+    }
+    li{
+		list-style: none;
+		display: inline-block;
+		margin-right: 15px;
+		}
+}
 
 // TOP NAV SECTION
 // -------------------------------
@@ -55,6 +79,11 @@ ul.topnav li.icon {
 	font-family: $serif;
 	line-height: 15px;
 	border-bottom: $seafoam solid 1px;
+	overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    z-index: 1;
 		.nav-name {
 		// min-width: 308px;
 

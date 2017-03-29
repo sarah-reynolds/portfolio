@@ -8,29 +8,57 @@
   height: 100vh;
   color: #373737;
   font-size: 16px;
+  padding-top: 60px;
 }
-/* line 29, ../compass/sass/styles.scss */
+/* line 30, ../compass/sass/styles.scss */
 .app a {
   color: #373737;
   text-decoration: none;
 }
-/* line 32, ../compass/sass/styles.scss */
+/* line 33, ../compass/sass/styles.scss */
 .app a:visited {
   color: #373737;
   text-decoration: none;
 }
-/* line 36, ../compass/sass/styles.scss */
+/* line 37, ../compass/sass/styles.scss */
 .app a:hover, .app a:active {
   color: #80CC95;
   text-decoration: none;
 }
 
 /* line 46, ../compass/sass/styles.scss */
+#bottom-nav {
+  background-color: white;
+  height: 30px;
+  padding: 5px;
+  color: #373737;
+  font-family: "Playfair Display", serif;
+  line-height: 15px;
+  border-top: #80CC95 solid 1px;
+  overflow: hidden;
+  position: fixed;
+  /* Set the navbar to fixed position */
+  bottom: 0;
+  /* Position the navbar at the top of the page */
+  width: 100%;
+}
+/* line 58, ../compass/sass/styles.scss */
+#bottom-nav .btmnav {
+  padding-left: 16px;
+}
+/* line 61, ../compass/sass/styles.scss */
+#bottom-nav li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 15px;
+}
+
+/* line 70, ../compass/sass/styles.scss */
 ul.topnav li.icon {
   display: none;
 }
 
-/* line 50, ../compass/sass/styles.scss */
+/* line 74, ../compass/sass/styles.scss */
 .app-header {
   background-color: white;
   height: 60px;
@@ -39,25 +67,33 @@ ul.topnav li.icon {
   font-family: "Playfair Display", serif;
   line-height: 15px;
   border-bottom: #80CC95 solid 1px;
+  overflow: hidden;
+  position: fixed;
+  /* Set the navbar to fixed position */
+  top: 0;
+  /* Position the navbar at the top of the page */
+  width: 100%;
+  /* Full width */
+  z-index: 1;
 }
-/* line 61, ../compass/sass/styles.scss */
+/* line 90, ../compass/sass/styles.scss */
 .app-header .nav-name .seafoam-green {
   color: #80CC95;
   font-size: 24px;
 }
-/* line 67, ../compass/sass/styles.scss */
+/* line 96, ../compass/sass/styles.scss */
 .app-header .navbar {
   float: right;
 }
-/* line 69, ../compass/sass/styles.scss */
+/* line 98, ../compass/sass/styles.scss */
 .app-header .navbar .topnav {
   float: right;
 }
-/* line 71, ../compass/sass/styles.scss */
+/* line 100, ../compass/sass/styles.scss */
 .app-header .navbar .topnav #hamburger {
   font-size: 30px;
 }
-/* line 75, ../compass/sass/styles.scss */
+/* line 104, ../compass/sass/styles.scss */
 .app-header .navbar li {
   list-style: none;
   display: inline-block;
@@ -65,7 +101,7 @@ ul.topnav li.icon {
   color: #373737;
   text-decoration: none;
 }
-/* line 81, ../compass/sass/styles.scss */
+/* line 110, ../compass/sass/styles.scss */
 .app-header .navbar li:after {
   content: '';
   display: block;
@@ -75,25 +111,25 @@ ul.topnav li.icon {
   transition: width .5s ease, background-color .5s ease;
   text-decoration: none;
 }
-/* line 90, ../compass/sass/styles.scss */
+/* line 119, ../compass/sass/styles.scss */
 .app-header .navbar li:hover:after {
   width: 100%;
   background: #80CC95;
   color: #80CC95;
   text-decoration: none;
 }
-/* line 96, ../compass/sass/styles.scss */
+/* line 125, ../compass/sass/styles.scss */
 .app-header .navbar li:active {
   text-decoration: none;
   color: #80CC95;
 }
-/* line 100, ../compass/sass/styles.scss */
+/* line 129, ../compass/sass/styles.scss */
 .app-header .navbar li:visited {
   color: #373737;
   text-decoration: none;
 }
 
-/* line 111, ../compass/sass/styles.scss */
+/* line 140, ../compass/sass/styles.scss */
 .custom-button {
   padding: 8px 15px;
   font-size: 14px;
@@ -105,14 +141,14 @@ ul.topnav li.icon {
   /* Safari */
   transition-duration: 0.5s;
 }
-/* line 121, ../compass/sass/styles.scss */
+/* line 150, ../compass/sass/styles.scss */
 .custom-button:hover, .custom-button:active, .custom-button:visited {
   color: #373737;
   text-decoration: none;
   background-color: #80CC95;
 }
 
-/* line 128, ../compass/sass/styles.scss */
+/* line 157, ../compass/sass/styles.scss */
 .back-button {
   padding: 8px 15px;
   font-size: 14px;
@@ -124,19 +160,19 @@ ul.topnav li.icon {
   /* Safari */
   transition-duration: 0.5s;
 }
-/* line 138, ../compass/sass/styles.scss */
+/* line 167, ../compass/sass/styles.scss */
 .back-button:hover, .back-button:active, .back-button:visited {
   color: #373737;
   text-decoration: none;
   background-color: #80CC95;
 }
 
-/* line 145, ../compass/sass/styles.scss */
+/* line 174, ../compass/sass/styles.scss */
 .inlineblock {
   display: inline-block;
 }
 
-/* line 151, ../compass/sass/styles.scss */
+/* line 180, ../compass/sass/styles.scss */
 .home {
   background-image: url("http://i.imgur.com/UjFsPaq.jpg");
   background-repeat: no-repeat;
@@ -145,7 +181,7 @@ ul.topnav li.icon {
   min-height: 100vh;
   /* Safari 4.0 - 8.0 */
 }
-/* line 157, ../compass/sass/styles.scss */
+/* line 186, ../compass/sass/styles.scss */
 .home .home-bg {
   background-color: rgba(128, 204, 149, 0.7);
   padding: 30px 0;
@@ -172,18 +208,18 @@ ul.topnav li.icon {
     background-color: rgba(128, 204, 149, 0.7);
   }
 }
-/* line 175, ../compass/sass/styles.scss */
+/* line 204, ../compass/sass/styles.scss */
 .home .hello {
   font-size: 30px;
   font-family: "Playfair Display", serif;
   color: white;
 }
-/* line 180, ../compass/sass/styles.scss */
+/* line 209, ../compass/sass/styles.scss */
 .home .intro {
   font-size: 20px;
 }
 
-/* line 188, ../compass/sass/styles.scss */
+/* line 217, ../compass/sass/styles.scss */
 .about {
   background-image: url("http://i.imgur.com/mDPmKaC.jpg");
   background-repeat: repeat;
@@ -191,40 +227,40 @@ ul.topnav li.icon {
   min-height: 100vh;
   padding: 50px;
 }
-/* line 194, ../compass/sass/styles.scss */
+/* line 223, ../compass/sass/styles.scss */
 .about a {
   color: #80CC95;
 }
-/* line 197, ../compass/sass/styles.scss */
+/* line 226, ../compass/sass/styles.scss */
 .about .profile-pic {
   width: 100%;
   max-width: 475px;
   border: 5px solid #80CC95;
 }
-/* line 202, ../compass/sass/styles.scss */
+/* line 231, ../compass/sass/styles.scss */
 .about .about-header {
   font-size: 30px;
   font-family: "Playfair Display", serif;
   padding-top: 20px;
 }
 
-/* line 211, ../compass/sass/styles.scss */
+/* line 240, ../compass/sass/styles.scss */
 .portfolio {
   background-image: url("http://i.imgur.com/mDPmKaC.jpg");
   background-repeat: repeat;
   height: auto;
   min-height: 100vh;
 }
-/* line 217, ../compass/sass/styles.scss */
+/* line 246, ../compass/sass/styles.scss */
 .portfolio .port-header {
   font-family: "Playfair Display", serif;
   font-weight: 700;
 }
-/* line 221, ../compass/sass/styles.scss */
+/* line 250, ../compass/sass/styles.scss */
 .portfolio .port-section {
   margin-bottom: 10px;
 }
-/* line 224, ../compass/sass/styles.scss */
+/* line 253, ../compass/sass/styles.scss */
 .portfolio .port-wrapper {
   padding: 5px;
   margin-bottom: 20px;
@@ -233,7 +269,7 @@ ul.topnav li.icon {
   -webkit-transition: border .2s ease-in-out;
   transition: border .2s ease-in-out;
 }
-/* line 231, ../compass/sass/styles.scss */
+/* line 260, ../compass/sass/styles.scss */
 .portfolio .port-wrapper img {
   width: 100%;
   border: 1px solid #F4F4F4;
@@ -241,7 +277,7 @@ ul.topnav li.icon {
   max-width: 300px;
 }
 
-/* line 242, ../compass/sass/styles.scss */
+/* line 271, ../compass/sass/styles.scss */
 .experience {
   background-image: url("http://i.imgur.com/mDPmKaC.jpg");
   background-repeat: repeat;
@@ -249,12 +285,12 @@ ul.topnav li.icon {
   min-height: 100vh;
   padding: 50px;
 }
-/* line 248, ../compass/sass/styles.scss */
+/* line 277, ../compass/sass/styles.scss */
 .experience .resume-button {
   float: right;
   padding-top: 20px;
 }
-/* line 252, ../compass/sass/styles.scss */
+/* line 281, ../compass/sass/styles.scss */
 .experience .Collapsible__trigger {
   color: #373737;
   font-size: 16px;
@@ -262,49 +298,49 @@ ul.topnav li.icon {
   text-decoration: underline;
   padding-left: 24px;
 }
-/* line 259, ../compass/sass/styles.scss */
+/* line 288, ../compass/sass/styles.scss */
 .experience .Collapsible__trigger:hover, .experience .Collapsible__trigger:active {
   color: #80CC95;
 }
-/* line 263, ../compass/sass/styles.scss */
+/* line 292, ../compass/sass/styles.scss */
 .experience .Collapsible__contentOuter {
   padding-left: 24px;
   padding-top: 5px;
 }
-/* line 267, ../compass/sass/styles.scss */
+/* line 296, ../compass/sass/styles.scss */
 .experience .skills-header {
   font-weight: 700;
   font-family: "Playfair Display", serif;
 }
-/* line 272, ../compass/sass/styles.scss */
+/* line 301, ../compass/sass/styles.scss */
 .experience .learn-more {
   margin-left: 10px;
 }
-/* line 275, ../compass/sass/styles.scss */
+/* line 304, ../compass/sass/styles.scss */
 .experience .skills-bg {
   background-color: #E8E8E8;
   border: 5px double #80CC95;
   padding: 20px;
 }
-/* line 280, ../compass/sass/styles.scss */
+/* line 309, ../compass/sass/styles.scss */
 .experience .exp-header {
   font-weight: 700;
 }
-/* line 284, ../compass/sass/styles.scss */
+/* line 313, ../compass/sass/styles.scss */
 .experience .lang-sym {
   min-width: 60px;
   font-size: 11px;
   text-align: center;
   margin-bottom: 10px;
 }
-/* line 290, ../compass/sass/styles.scss */
+/* line 319, ../compass/sass/styles.scss */
 .experience .lang-header {
   border-top: 2px solid #80CC95;
   margin-top: 10px;
   padding-top: 5px;
 }
 
-/* line 299, ../compass/sass/styles.scss */
+/* line 328, ../compass/sass/styles.scss */
 .connect {
   background-image: url("http://i.imgur.com/mDPmKaC.jpg");
   background-repeat: repeat;
@@ -312,86 +348,86 @@ ul.topnav li.icon {
   min-height: 100vh;
   padding: 50px;
 }
-/* line 305, ../compass/sass/styles.scss */
+/* line 334, ../compass/sass/styles.scss */
 .connect .form-label {
   width: 15%;
 }
-/* line 309, ../compass/sass/styles.scss */
+/* line 338, ../compass/sass/styles.scss */
 .connect .input {
   width: 85%;
   border: 1px solid #F4F4F4;
 }
-/* line 313, ../compass/sass/styles.scss */
+/* line 342, ../compass/sass/styles.scss */
 .connect textarea {
   height: 100px;
 }
-/* line 316, ../compass/sass/styles.scss */
+/* line 345, ../compass/sass/styles.scss */
 .connect .connect-spacing {
   line-height: 30px;
 }
 
 @media screen and (min-width: 768px) {
-  /* line 325, ../compass/sass/styles.scss */
+  /* line 354, ../compass/sass/styles.scss */
   .nav-name {
     font-size: 30px;
     min-width: 308px;
   }
 
-  /* line 329, ../compass/sass/styles.scss */
+  /* line 358, ../compass/sass/styles.scss */
   .home-bg {
     margin-top: 125px;
   }
 
-  /* line 332, ../compass/sass/styles.scss */
+  /* line 361, ../compass/sass/styles.scss */
   .portfolio {
     padding: 50px;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 338, ../compass/sass/styles.scss */
+  /* line 367, ../compass/sass/styles.scss */
   #arrow-glyph {
     display: none;
   }
 
-  /* line 341, ../compass/sass/styles.scss */
+  /* line 370, ../compass/sass/styles.scss */
   .portfolio {
     padding: 10px;
   }
 
-  /* line 344, ../compass/sass/styles.scss */
+  /* line 373, ../compass/sass/styles.scss */
   .nav-name {
     font-size: 20px;
     min-width: 170px;
   }
 
-  /* line 348, ../compass/sass/styles.scss */
+  /* line 377, ../compass/sass/styles.scss */
   .home-bg {
     margin-top: 10px;
   }
 
-  /* line 351, ../compass/sass/styles.scss */
+  /* line 380, ../compass/sass/styles.scss */
   ul.topnav {
     background-color: white;
   }
 
-  /* line 354, ../compass/sass/styles.scss */
+  /* line 383, ../compass/sass/styles.scss */
   ul.topnav li.list-item {
     display: none;
   }
 
-  /* line 357, ../compass/sass/styles.scss */
+  /* line 386, ../compass/sass/styles.scss */
   #first-list-item {
     padding-top: 60px;
   }
 
-  /* line 360, ../compass/sass/styles.scss */
+  /* line 389, ../compass/sass/styles.scss */
   ul.topnav li.icon {
     float: right;
     display: inline-block;
     margin-right: 0px;
   }
 
-  /* line 365, ../compass/sass/styles.scss */
+  /* line 394, ../compass/sass/styles.scss */
   ul.topnav.responsive {
     position: absolute;
     top: 0px;
@@ -399,26 +435,26 @@ ul.topnav li.icon {
     z-index: 2;
   }
 
-  /* line 371, ../compass/sass/styles.scss */
+  /* line 400, ../compass/sass/styles.scss */
   ul.topnav.responsive li.icon {
     position: absolute;
     right: 0;
     top: 0;
   }
 
-  /* line 377, ../compass/sass/styles.scss */
+  /* line 406, ../compass/sass/styles.scss */
   ul.topnav.responsive li {
     float: none;
     display: inline;
   }
 
-  /* line 381, ../compass/sass/styles.scss */
+  /* line 410, ../compass/sass/styles.scss */
   ul.topnav.responsive li a {
     display: block;
     text-align: left;
   }
 
-  /* line 388, ../compass/sass/styles.scss */
+  /* line 417, ../compass/sass/styles.scss */
   ul.topnav.responsive#myTopnav {
     padding: 10px;
   }

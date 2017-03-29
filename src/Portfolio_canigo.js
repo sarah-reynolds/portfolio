@@ -11,7 +11,7 @@ class Portfolio_canigo extends Component {
 					<div className="port-wrapper col-xs-12">
 						<h3 className="port-header">&nbsp;CaniGo.co</h3>
 						<div className="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12"><br />
-							<p className="port-section">CaniGo.co is a website designed for spontaneous travelers who want to see more of the world. Users enter their place of origin, travel dates, and budget, then CaniGo.co will display destination options within their budget. The UI is simple, while scripts are running behind the scene, making api calls and filtering the results to match the user's input. CaniGo.co was built by Sarah Basinger (<a href="https://github.com/sarahbasinger" target="_blank">github.com/sarahbasinger</a>), Daniel Crowder (<a href="https://github.com/bullutk" target="_blank">github.com/bullutk</a>), Andy Tuttle (<a href="https://github.com/AndyTuttle12" target="_blank">github.com/AndyTuttle12</a>), and Ryan Ramdehol (<a href="https://github.com/rramdehol" target="_blank">github.com/rramdehol</a>).</p>
+							<p className="port-section">CaniGo.co is a website designed for spontaneous travelers who want to see more of the world. Users enter their place of origin, travel dates, and budget, then CaniGo.co will display destination options within their budget. The UI is simple, while scripts are running behind the scene, making api calls and filtering the results to match the user{"'"}s input. CaniGo.co was built by Sarah Basinger (<a href="https://github.com/sarahbasinger" target="_blank">github.com/sarahbasinger</a>), Daniel Crowder (<a href="https://github.com/bullutk" target="_blank">github.com/bullutk</a>), Andy Tuttle (<a href="https://github.com/AndyTuttle12" target="_blank">github.com/AndyTuttle12</a>), and Ryan Ramdehol (<a href="https://github.com/rramdehol" target="_blank">github.com/rramdehol</a>).</p>
 							<BtnExternal linkTo={"http://www.canigo.co"} buttonText={"Live Demo*"} /><br />
 							* Please choose ATL or NYC for origin, and travel dates of 4/22/17 - 4/29/17. This is due to API restrictions while we are in the prototyping phase. 
 						</div>
@@ -70,22 +70,22 @@ class Portfolio_canigo extends Component {
 									- Create promises within a function for each necessary API call<br />
 									- Start with the Flight Inspiration Search. This API call will pull back trip destination options.</p>
 									
-									<code><br />
-									{"function flightInspiration(url){ "} <br />
-										&nbsp;{" return new Promise(function(resolve, reject){ "} <br />
-											&nbsp;&nbsp;&nbsp;&nbsp;{" var inspirationSearch = request(url,function(error, response, body){ "} <br />
-												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" // the api response comes back as a string, so we need to parse it into an object "} <br />
-												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" var parsedBody = JSON.parse(body); "} <br />
-												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" var destinationsArray = []; "} <br />
-												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" // map through the results and push each destination iata to an array "} <br />
-												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" parsedBody.results.map((currentValue, currentIndex)=>{ "} <br />
-													&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" destinationsArray.push({iata: currentValue.destination}) "} <br />
-												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" }) "} <br />
-												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" // resolve the promise "} <br />
-												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" resolve(destinationsArray) "} <br />
-											&nbsp;&nbsp;&nbsp;&nbsp;{" }) "} <br />
-										&nbsp;{" }) "} <br />
-									{" } "} <br />
+									<code className="code-snippet">
+										{"function flightInspiration(url){ "} <br />
+											&nbsp;{" return new Promise(function(resolve, reject){ "} <br />
+												&nbsp;&nbsp;&nbsp;&nbsp;{" var inspirationSearch = request(url,function(error, response, body){ "} <br />
+													&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" // the api response comes back as a string, so we need to parse it into an object "} <br />
+													&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" var parsedBody = JSON.parse(body); "} <br />
+													&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" var destinationsArray = []; "} <br />
+													&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" // map through the results and push each destination iata to an array "} <br />
+													&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" parsedBody.results.map((currentValue, currentIndex)=>{ "} <br />
+														&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" destinationsArray.push({iata: currentValue.destination}) "} <br />
+													&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" }) "} <br />
+													&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" // resolve the promise "} <br />
+													&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" resolve(destinationsArray) "} <br />
+												&nbsp;&nbsp;&nbsp;&nbsp;{" }) "} <br />
+											&nbsp;{" }) "} <br />
+										{" } "} <br />
 									</code>
 									
 								</div>

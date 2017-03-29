@@ -7,7 +7,7 @@ class Connect extends Component {
 			<div className="container-fluid connect">
 				<div className="row">
 					<div className="col-xs-12 col-sm-10 col-sm-offset-1">
-						<div className="connect-spacing">
+						<div className="connect-spacing ">
 							<a href="https://github.com/sarahbasinger" target="_blank"><img src="/images/github.png" width="50px" role="presentation" />
 							<br />github.com/sarahbasinger</a>
 						</div> <br />

@@ -16,8 +16,8 @@ class About extends Component {
 							</div>
 							<div>
 								<br /><p>[&nbsp;Email marketing professional turned full-stack web developer.&nbsp;]</p>
-								<p>I am currently enrolled in a 4-month full-stack web development training program at <a href="http://www.digitalcrafts.com" target="_blank"><strong>DigitalCrafts</strong></a> in Atlanta, GA. Class wraps up on March 24, 2017.</p>
-								<p>When I'm not coding, you can find me reading fantasy novels, going on hikes with my dogs, traveling, playing video games, baking, taking pictures, and obsessing over anything Harry Potter or Lord of the Rings.</p>
+								<p>On March 24, 2017, I completed a 4-month full-stack web development training program at <a href="http://www.digitalcrafts.com" target="_blank"><strong>DigitalCrafts</strong></a> in Atlanta, GA. Before then, I spent 7 years in the email marketing industry.</p>
+								<p>When I{"'"}m not coding, you can find me reading fantasy novels, going on hikes with my dogs, traveling, playing video games, baking, taking pictures, and obsessing over anything Harry Potter or Lord of the Rings.</p>
 							</div>
 							<div className="col-xs-12 text-center">
 								<br /><Button linkTo={"/experience"} buttonText={"Experience and Skills"} />

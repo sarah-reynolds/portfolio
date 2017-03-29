@@ -9,7 +9,7 @@ class Portfolio_canigo extends Component {
 			<div className="container-fluid portfolio">
 				<div className="row">
 					<div className="port-wrapper col-xs-12">
-						<h3 className="port-header">&nbsp;CaniGo.co</h3>
+						<h3 className="port-header-center">CaniGo.co</h3>
 						<div className="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12"><br />
 							<p className="port-section">CaniGo.co is a website designed for spontaneous travelers who want to see more of the world. Users enter their place of origin, travel dates, and budget, then CaniGo.co will display destination options within their budget. The UI is simple, while scripts are running behind the scene, making api calls and filtering the results to match the user{"'"}s input. CaniGo.co was built by Sarah Basinger (<a href="https://github.com/sarahbasinger" target="_blank">github.com/sarahbasinger</a>), Daniel Crowder (<a href="https://github.com/bullutk" target="_blank">github.com/bullutk</a>), Andy Tuttle (<a href="https://github.com/AndyTuttle12" target="_blank">github.com/AndyTuttle12</a>), and Ryan Ramdehol (<a href="https://github.com/rramdehol" target="_blank">github.com/rramdehol</a>).</p>
 							<BtnExternal linkTo={"http://www.canigo.co"} buttonText={"Live Demo*"} /><br />

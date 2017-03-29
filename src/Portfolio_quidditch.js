@@ -10,7 +10,7 @@ class Portfolio_quidditch extends Component {
 				<div className="row">
 					<div className="col-xs-12">
 						<div className="port-wrapper col-xs-12">
-						<h3 className="port-header">Quidditch Practice</h3>
+						<h3 className="port-header-center">Quidditch Practice</h3>
 						<div className="row">
 							
 							<div className="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">

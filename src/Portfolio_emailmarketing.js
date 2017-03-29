@@ -10,7 +10,7 @@ class Portfolio_emailmarketing extends Component {
 				<div className="row">
 					<div className="col-xs-12">
 						<div className="port-wrapper col-xs-12">
-							<h3 className="port-header">&nbsp;Email Marketing</h3>
+							<h3 className="port-header-center">Email Marketing</h3>
 								<div className="row">
 									<div className="col-md-6 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12"><br />
 										<h4 className="port-header">Loyalty program marketing emails</h4>

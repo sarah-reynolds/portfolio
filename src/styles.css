@@ -67,7 +67,6 @@ ul.topnav li.icon {
   font-family: "Playfair Display", serif;
   line-height: 15px;
   border-bottom: #80CC95 solid 1px;
-  overflow: hidden;
   position: fixed;
   /* Set the navbar to fixed position */
   top: 0;

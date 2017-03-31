@@ -3,12 +3,12 @@
 React website for showcasing my work as a web developer.
 
 ### Technologies 
-HTML 
-CSS 
-JavaScript 
-Bootstrap 
-React 
-Sass
+- HTML 
+- CSS 
+- JavaScript 
+- Bootstrap 
+- React 
+- Sass
 
 ### Dependencies
 ```

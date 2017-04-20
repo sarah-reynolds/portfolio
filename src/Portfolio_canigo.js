@@ -13,7 +13,7 @@ class Portfolio_canigo extends Component {
 						<div className="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12"><br />
 							<p className="port-section">CaniGo.co is a website designed for spontaneous travelers who want to see more of the world. Users enter their place of origin, travel dates, and budget, then CaniGo.co will display destination options within their budget. The UI is simple, while scripts are running behind the scene, making api calls and filtering the results to match the user{"'"}s input. CaniGo.co was built by Sarah Basinger (<a href="https://github.com/sarahbasinger" target="_blank">github.com/sarahbasinger</a>), Daniel Crowder (<a href="https://github.com/bullutk" target="_blank">github.com/bullutk</a>), Andy Tuttle (<a href="https://github.com/AndyTuttle12" target="_blank">github.com/AndyTuttle12</a>), and Ryan Ramdehol (<a href="https://github.com/rramdehol" target="_blank">github.com/rramdehol</a>).</p>
 							<BtnExternal linkTo={"http://www.canigo.co"} buttonText={"Live Demo*"} /><br />
-							* Please choose ATL or NYC for origin, and travel dates of 4/22/17 - 4/29/17. This is due to API restrictions while we are in the prototyping phase. 
+							* Please note the origin is limited to Atlanta, New York City, or Los Angeles, and the travel dates must be 7/22/17 - 7/29/17. This is due to API restrictions while we are in the prototyping phase. 
 						</div>
 
 						<div className="row">

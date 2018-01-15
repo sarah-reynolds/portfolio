@@ -281,8 +281,30 @@ ul.topnav li.icon {
 	padding: 50px;
 	.resume-button{
 		float: right;
-		padding-top: 20px;
+		padding: 0 20px 20px 20px;
 	}
+
+	.exp-header {
+		font-family: $serif;
+	}
+
+	.exp-date-range {
+		font-style: italic;
+	}
+
+	.exp-tech-used {
+		font-weight: bold;
+		color: $darkseafoam;
+	}
+
+	.exp-job-desc {
+		padding-bottom: 20px;
+	}
+
+	.exp-summary, .exp-title, .exp-company, .exp-tech-used, .exp-job-desc {
+		padding-left: 10px;
+	}
+
 	.Collapsible__trigger {
 
 		color: $darkgray;

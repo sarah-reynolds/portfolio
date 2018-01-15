@@ -32,7 +32,7 @@ class Portfolio_emailmarketing extends Component {
 									<h4 className="port-header">Service confirmation emails</h4>
 									<ul>
 										<li>Build new responsive templates</li>
-										<li>Clean up, minify, and comment out code; create documentation on the code and data flow</li>
+										<li>Clean up and minify code; create documentation on the code and data flow</li>
 										<li>Manage data with back-end team</li>
 										<li>Redesign and code corporate Cartera confirmation email</li>
 									</ul>

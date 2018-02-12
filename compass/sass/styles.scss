@@ -290,6 +290,7 @@ ul.topnav li.icon {
 
 	.exp-date-range {
 		font-style: italic;
+		padding-top: 10px;
 	}
 
 	.exp-tech-used {
@@ -307,13 +308,14 @@ ul.topnav li.icon {
 
 	.Collapsible__trigger {
 
-		color: $darkgray;
+		color: $darkseafoam;
 		font-size: 16px;
 		cursor: pointer;
-		text-decoration: underline;	
-		padding-left: 24px;
+		font-style: italic;
+		text-decoration: none;
+		padding-left: 10px;
 		&:hover, &:active{
-				color: $seafoam;
+				color: $darkseafoam;
 		}
 	}
 	.Collapsible__contentOuter{
@@ -335,6 +337,7 @@ ul.topnav li.icon {
 	}
 	.exp-header {
 		font-weight: 700;
+		padding-top: 10px;
 	}
 
 	.lang-sym {

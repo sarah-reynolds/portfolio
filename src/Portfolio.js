@@ -51,12 +51,12 @@ class Portfolio extends Component {
 					<div className="col-sm-6 col-xs-12">
 						<div className="port-wrapper col-xs-12">
 							<div className="col-md-6 col-sm-12">
-								<h3 className="port-header">Quidditch Practice</h3>
-								<p className="port-section">Just for fun. A Harry Potter themed game built using canvas.</p>
-								<Button linkTo={"/quidditch"} buttonText={"Learn more"} />&nbsp;
+								<h3 className="port-header">Air&trade; Hardwoods</h3>
+								<p className="port-section">Freelance project using WordPress and XTheme</p>
+								<Button linkTo={"/airhardwoods"} buttonText={"Learn more"} />&nbsp;
 							</div>
 							<div className="col-md-6 col-sm-12">
-								<img src="/images/quidditch_screenshot.png" role="presentation" />
+								<img src="/images/air_hardwoods_screenshot.jpg" role="presentation" />
 							</div>
 						</div>
 					</div>	

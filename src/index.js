@@ -10,6 +10,7 @@ import Portfolio from './Portfolio';
 import Portfolio_canigo from './Portfolio_canigo';
 import Portfolio_quidditch from './Portfolio_quidditch';
 import Portfolio_emailmarketing from './Portfolio_emailmarketing';
+import Portfolio_airhardwoods from './Portfolio_airhardwoods';
 import Portfolio_portfolio from './Portfolio_portfolio';
 import Connect from './Connect';
 
@@ -24,6 +25,7 @@ ReactDOM.render(
 			<Route path='/canigo' component={Portfolio_canigo} />
 			<Route path='/quidditch' component={Portfolio_quidditch} />
 			<Route path='/emailmarketing' component={Portfolio_emailmarketing} />
+			<Route path='/airhardwoods' component={Portfolio_airhardwoods} />
 			<Route path='/portfoliowebsite' component={Portfolio_portfolio} />
 			<Route path='/connect' component={Connect} />
 		</Route>

@@ -21,7 +21,7 @@ class About extends Component {
 								<p>When I{"'"}m not coding, you can find me reading fantasy novels, going on hikes with my dogs, traveling, playing video games, baking, taking pictures, and obsessing over anything Harry Potter or Lord of the Rings.</p>
 							</div>
 							<div className="col-xs-12 text-center">
-								<br /><Button linkTo={"/experience"} buttonText={"Experience"} />
+								<br /><Button linkTo={"/connect"} buttonText={"Connect"} />
 							</div>
 						</div>
 					</div>

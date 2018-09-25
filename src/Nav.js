@@ -24,8 +24,6 @@ class TopNav extends Component {
 						<ul className="topnav" id="myTopnav">
 							<li id="first-list-item" className="list-item"><Link to='/'>Home</Link></li>
 							<li className="list-item"><Link to='/about'>About</Link></li>
-							<li className="list-item"><Link to='/experience'>Experience</Link></li>
-							<li className="list-item"><Link to='/portfolio'>Projects</Link></li>
 							<li className="list-item"><Link to='/connect'>Connect</Link></li>
 							<li className="icon">
 								<a id="hamburger" href="javascript:void(0)" onClick={this.navHamburger}>&#8801;</a>
